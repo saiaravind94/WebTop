@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+lnkCallerIdDetails,xpath,.//a[@data-number='6'],lnkCallerIdDetails
+txtCallerIDName,name,cIdDispName,txtCallerIDName
+btnSaveGeneral,xpath,"//button[text()=""Save""]",btnSaveGeneral
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful

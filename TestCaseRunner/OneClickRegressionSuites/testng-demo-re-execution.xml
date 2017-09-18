@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIMONValidations" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	
+	<test name="VerifySeatPurposeChangeFromENTAdmintoTechAdmin">
+		<classes>
+			<class name="com.comcast.WebTopCases.SeatPurposeChangeValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySeatPurposeChangeFromENTAdmintoTechAdmin" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Verify_monitored_users_are_configured_and_displayed_correctly_in_Order_Summary_Screen">
+		<classes>
+			<class name="com.comcast.WebTopCases.DetailedOrderSummaryScenarios">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySeatDetailsFieldsandPDFinDetailedOrderSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test
+		name="Verify_sorting_is_working_properly_in_AA_prompt_screen_for_TransferToOperator_TransferWithPrompt_TransferWithOutPrompt">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyAvailableSeatsAndGroupsInAscOrDescOrder" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

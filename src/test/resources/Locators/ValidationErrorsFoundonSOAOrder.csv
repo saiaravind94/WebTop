@@ -1,0 +1,14 @@
+locId,locType,locStr,weType
+tabProspectProfile,xpath,".//a[contains(text(),'Prospect Profile') or contains(text(),'Customer Profile')]",tabProspectProfile
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'ADMIN: Validation Errors Found on SOA Order') or contains(text(),'ADMIN: Validation Errors Found on SDW Order')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+errorValidationErrorsFoundonSOAOrderTray,xpath,".//a[contains(text(),'ADMIN: Validation Errors Found on SOA Order') or contains(text(),'ADMIN: Validation Errors Found on SDW Order')]",errorValidationErrorsFoundonSOAOrderTray
+lnkInprogressOrder,xpath,.//span[text()='1 Open Inventory Order'],lnkInprogressOrder
+expandContactInfo,xpath,"//span[contains(@onclick,'contactInfo')]",expanContactInfo
+expandMainContact,xpath,"//span[contains(@onclick,'Main ContactSpan')]",expandMainContact
+lnkEditContact,xpath,.//*[@id='prospectForm:contactTypes:4:contactTypes:0:editEntityContact' or @id='customerForm:contactTypes:4:contactTypes:0:editEntityContact'],lnkEditContact
+txtName,xpath,.//*[@id='contactTypeForm:name'],txtName
+btnUpdate,xpath,.//*[@id='contactTypeForm:ok'],btnUpdate
+lnkOrderId,xpath,//a[@id='prospectForm:createNewOrder']/../table/tbody/tr/td[1]/a,lnkOrderID
+btnGo,id,mainMenu:quickSearchForm:quickSearch,btnGo

@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,//span[.='Result: ']/../../td/select,lstResult
+trayName,xpath,".//a[contains(text(),'Errors on Order') or contains(.,'Auto: Provision 911 Address Change')]",trayName
+btnSetResult,xpath,//input[@value='Set Result'],btnSetResult
+lnkSelectAll,xpath,//a[.='Select All'],
+trayLinkList,xpath,"//a/span[contains(.,'Errors on Order')or contains(.,'Auto: Provision 911 Address Change')]|//a[contains(@id,'changeOrderManagementForm:changeOrderTable')]",

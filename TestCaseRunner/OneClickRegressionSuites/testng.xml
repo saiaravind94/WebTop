@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIMONValidations" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	
+	<test name="VerifySeatPurposeChangeFromENTAdmintoTechAdmin">
+		<classes>
+			<class name="com.comcast.WebTopCases.SeatPurposeChangeValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySeatPurposeChangeFromENTAdmintoTechAdmin" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

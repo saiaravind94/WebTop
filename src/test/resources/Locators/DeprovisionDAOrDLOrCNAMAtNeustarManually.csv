@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'PROV: Deprovision DA/DL/CNAM at Neustar Manually')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSave,id,projectForm:trayHistorySave,btnSave
+trayName,xpath,".//a[contains(text(),'PROV: Deprovision DA/DL/CNAM at Neustar Manually')]",trayName

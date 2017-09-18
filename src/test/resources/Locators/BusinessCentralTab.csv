@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabBusinessCentral,xpath,//span[normalize-space(.)='Business Central'],tabBusinessCentral
+lnkTerminate,id,customerForm:terminateCustomerLink,lnkTerminate
+btnTerminate,id,customerForm:add,btnTerminate
+imgCalendar,xpath,//span[.='Termination Date']/../following-sibling::td/span/img,imgCalendar
+btnToday,xpath,"//td[contains(@class,'today')]",btnToday
+lnkExpandAll,xpath,"//a[@class='expand'][contains(@href,'expand')]",lnkExpandAll
+ETSCCount,id,customerForm:totalSeatCount,ETSCCount

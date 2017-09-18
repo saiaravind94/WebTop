@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+btnchooseFileProspect,xpath,.//*[@id='prospectForm:myFileId'],btnchooseFileProspect
+btnPreqaulCheckListAttach,xpath,//td[text()='Prequal Checklist']/../td/table/tbody/tr/td/input[@value='Attach'],btnPreqaulCheckListAttach
+btnPrequalCheckListFileAttach,xpath,//input[@id='prospectForm:myFileId']/../input[@value='Attach'],btnPrequalCheckListFileAttach
+elmtVerifySuccessful,xpath,//ul[@id='errorMessages']/li,elmtVerifySuccessful
+btnSaveContinue,id,prospectForm:endSummary,btnSaveContinue

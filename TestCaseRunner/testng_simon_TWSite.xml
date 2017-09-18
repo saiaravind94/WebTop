@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIMON_TW_Site" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	<test name="Verify_Teleworker_info_is_displayed_in_Order_Summary_Screen">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.Verify_Teleworker_info_is_displayed_in_Order_Summary_Screen">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyESGLicenseQuantityInOSPageAndPDFFile" />
+					<include name="verifySiteTypeInOSPageAndPDFFile" />					
+				</methods>
+			</class>
+		</classes>
+	</test>	
+</suite>

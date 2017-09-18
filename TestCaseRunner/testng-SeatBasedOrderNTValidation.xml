@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="10">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+
+	<test name="SeatBasedOrderNT_Validation">
+		<classes>
+			<class name="com.comcast.WebTopCases.BVE_NC_TW_SITE_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP_ST_TNS">
+				<methods>					
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="TNPortMigration" />
+					<include name="updateCRCPState" />
+					<include name="tollFreeTNConfiguration" />
+					<include name="directoryListing" />					
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="provisionPortedTNsForOrder" />
+					<include name="enterFOCDateForPortedTNs" />					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite> 

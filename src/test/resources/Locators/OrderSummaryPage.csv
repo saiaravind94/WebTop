@@ -1,0 +1,136 @@
+locId,locType,locStr,weType
+txtMACDType,xpath,//div[text()='MACD Type']//following::div[3],txtMACDType
+txtOrderDescription,xpath,//div[text()='Order Description']//following::div[3],txtOrderDescription
+txtTTSTicket,xpath,//div[text()='TTS Ticket #']//following::div[3],txtTTSTicket
+txtChangeType,xpath,//div[text()='Change Type']//following::div[3],txtChangeType
+txtEntityType,xpath,//div[text()='Entity Type']//following::div[3],txtEntityType
+txtEntityName,xpath,//div[text()='Entity Name']//following::div[3],txtEntityName
+txtSeatName,xpath,//div[text()='Seat Name']//following::div[3],txtSeatName
+txtFirstName,xpath,//div[text()='First Name']//following::div[3],txtFirstName
+txtLastName,xpath,//div[text()='Last Name']//following::div[3],txtLastName
+txtSeatType,xpath,//div[text()='Seat Type']//following::div[3],txtSeatType
+txtSeatPurpose,xpath,//div[text()='Seat Purpose']//following::div[3],txtSeatPurpose
+txtChangeTypeEdit,xpath,//h3[.='Seat Edit Details']//following::div[@class='summary-val'][1],txtChangeTypeEdit
+txtEntityTypeEdit,xpath,//h3[.='Seat Edit Details']//following::div[@class='summary-val'][2],txtEntityTypeEdit
+txtActionTypeEdit,xpath,//h3[.='Seat Edit Details']//following::div[.='Action']//following::div[@class='summary-val'][1],txtActionTypeEdit
+txtItemEdit,xpath,//h3[.='Seat Edit Details']//following::div[.='Item']//following::div[@class='summary-val'][1],txtItemEdit
+txtchangetoEdit,xpath,//h3[.='Seat Edit Details']//following::div[.='Change To']//following::div[@class='summary-val'][3],txtchangetoEdit
+closeOrderSummary,xpath,//a[text()='Close'],closeOrderSummary
+txtrmSeatName,xpath,//h3[text()='Seat Remove Details']//following::div[text()='Seat Name']//following::div[3][1],txtrmSeatName
+btnDownloadPDF,xpath,//button[.='Download PDF']|//a[.='Download PDF'],btnDownlaodPDF
+txtChangeTypeQueue,xpath,//h3[.='Call Queue Add Details']//following::div[@class='summary-val'][1],txtChangeTypeQueue
+txtEntityCallQueue,xpath,//h3[.='Call Queue Add Details']//following::div[text()='Entity Type']//following::div[text()='Call Queue'],txtEntityCallQueue
+txtCallQueueNameNameCallQueue,xpath,//div[.='Call Queue Name']//following::div[3],txtCallQueueNameNameCallQueue
+txtTimeZoneCallQueue,xpath,//h3[.='Call Queue Add Details']//following::div[text()='Time Zone']//following::div[3],txtTimeZoneCallQueue
+txtRemoveCallQueueName,xpath,//h3[.='Call Queue Remove Details']//following::div[.='Call Queue Name']//following::div[3],txtRemoveCallQueueName
+txtAddTFTN,xpath,//h3[.='Toll Free Add Details']//following::div[.='TN']//following::div[3],txtAddTFTN
+txtAddTFTNPortType,xpath,//h3[.='Toll Free Add Details']//following::div[.='Port Type']//following::div[3],txtAddTFTNPortType
+txtAddTFTNAreaOfService,xpath,//h3[.='Toll Free Add Details']//following::div[.='Area of Service']//following::div[3],txtAddTFTNAreaOfService
+txtEditTN,xpath,//h3[.='Toll Free Edit Details']//following::div[4],txtEditTN
+txtNewFNEditTN,xpath,//div[.='New First Name']//following::div[2],txtNewFNEditTN
+txtCurrentFNEditTN,xpath,//h3[.='Toll Free Edit Details']//following::div[.='Current First Name']//following::div[2],txtCurrentFNEditTN
+txtNewLNEditTN,xpath,//div[.='New Last Name']//following::div[2],txtNewLNEditTN
+txtCurrentLNEditTN,xpath,//div[.='Current Last Name']//following::div[2],txtCurrentLNEditTN
+txtTFTNRemove,xpath,//h3[.='Toll Free Remove Details']//following::div[3],txtTFTNRemove
+btnOrderSummary,xpath,//a[@class='toolbar-btn js-toolbar-btn js-order-summary-btn customer-toolbar-order-summary'],btnOrderSummary
+dropDownOrderSummaryType,xpath,//div[@class='js-summary-type-dropdown summary-type-dropdown'],dropDownOrderSummaryType
+txtESGLicenseQuantity,xpath,//th/div[.='Call Capacity (ESG License Quantity)']//following::div[2],txtESGLicenseQuantity
+txtSiteType,xpath,//th/div[.='Site Type']//following::div[3],txtSiteType
+txtTNRCF,xpath,//h3[.='RCF Add Details']//following::div[5],txtTNRCF
+txtTnlaRCF,xpath,//h3[.='RCF Add Details']//following::div[6],txtTnlaRCF
+txtRCFState,xpath,//h3[.='RCF Add Details']//following::div[.='State']//following::div[3],txtRCFState
+txtRCFPort,xpath,//h3[.='RCF Add Details']//following::div[.='Port Type']//following::div[3],txtRCFPort
+txtEditRCFTN,xpath,//h3[.='RCF Edit Details']//following::div[4],txtEditRCFTN
+txtEditRCFTransTN,xpath,//h3[.='RCF Edit Details']//following::div[5],txtEditRCFTransTN
+txtEditRCFNFN,xpath,//h3[.='RCF Edit Details']//following::div[.='New First Name']//following::div[2],txtEditRCFNFN
+txtEditRCFNLN,xpath,//h3[.='RCF Edit Details']//following::div[.='New Last Name']//following::div[2],txtEditRCFNLN
+txtEditRCFCFN,xpath,//h3[.='RCF Edit Details']//following::div[.='Current First Name']//following::div[2],txtEditRCFCFN
+txtEditRCFCLN,xpath,//h3[.='RCF Edit Details']//following::div[.='Current Last Name']//following::div[2],txtEditRCFCLN
+txtRCTRemTN,xpath,//h3[.='RCF Remove Details']//following::div[3],txtRCTRemTN
+txtRecptionistName,xpath,//h3[.='Receptionist Add Details']//following::div[3],txtRecptionistName
+txtRecptionistUsers,xpath,//h3[.='Receptionist Add Details']//following::div[5],txtRecptionistUsers
+txtRecpNameRemove,xpath,//h3[.='Receptionist Remove Details']//following::div[5],txtRecpNameRemove
+txtRecpTNRemove,xpath,//h3[.='Receptionist Remove Details']//following::div[6],txtRecpTNRemove
+txtAutoAttName,xpath,//h3[.='Auto Attendant Add Details']//following::div[14],txtAutoAttName
+txtAutoAttTimeZone,xpath,//h3[.='Auto Attendant Add Details']//following::div[20],txtAutoAttTimeZone
+txtAutoAttPhoneNo,xpath,//h3[.='Auto Attendant Add Details']//following::div[26],txtAutoAttPhoneNo
+txtTimeSchedulentsAutoAtt,xpath,//h3[.='Auto Attendant Add Details']//following::div[.='Time Schedule Notes']//following::div[2],txtTimeSchedulentsAutoAtt
+txtHolidayScheduleAutoAtt,xpath,//h3[.='Auto Attendant Add Details']//following::div[.='Time Schedule Notes']//following::div[3],txtHolidayScheduleAutoAtt
+txtAutoAttRmName,xpath,//h3[.='Auto Attendant Remove Details']//following::div[5],txtAutoAttRmName
+txtAutoAttRnPhoneNo,xpath,//h3[.='Auto Attendant Remove Details']//following::div[6],txtAutoAttRnPhoneNo
+txtAddTN,xpath,//h3[.='TN Add Details']//following::div[5],txtAddTN
+txtPortTNAdd,xpath,//h3[.='TN Add Details']//following::div[6],txtPortTNAdd
+txtEditTNMACD,xpath,//h3[.='TN Edit Details']//following::div[5],txtEditTNMACD
+txtEditTNNFN,xpath,//h3[.='TN Edit Details']//following::div[6],txtEditTNNFN
+txtEditTNNLN,xpath,//h3[.='TN Edit Details']//following::div[7],txtEditTNNLN
+txtEditTNCFN,xpath,//h3[.='TN Edit Details']//following::div[12],txtEditTNCFN
+txtEditTNCLN,xpath,//h3[.='TN Edit Details']//following::div[13],txtEditTNCLN
+txtTNRemove,xpath,//h3[.='TN Remove Details']//following::div[3],txtTNRemove
+txtShareCallAppSeatName,xpath,//h3[.='Shared Call Appearance']//following::div[.='Seat Name']/../../..//tr[2]/td[1]/div,txtShareCallAppSeatName
+txtShareCallAppDeviceType,xpath,//h3[.='Shared Call Appearance']//following::div[.='Seat Name']/../../..//tr[2]/td[2]/div,txtShareCallAppDeviceType
+txtRecetionistNameOS,xpath,//h3[.='Receptionist Console Details']//following::div[.='Name']//following::div[4],txtRecetionistNameOS
+txtAddHuntGroup,xpath,//div[.='Additional Hunt Group']//following::div[2],txtAddHuntGroup
+txtUCSeatReceptionist,xpath,//h3[.='Receptionist Console Details']//following::div[.='UC Seat Receptionist']/../../../tr[2]/td/div,txtUCSeatReceptionist
+txtCallQueueName,xpath,//div[.='Call Queue Name']/../../../tr[2]/td[1]/div,txtCallQueueName
+txtHGName,xpath,//div[.='Hunt Group Name']/../../../tr[2]/td[1]/div,txtHGName
+txtHGrnName,xpath,//h3[.='Hunt Group Remove Details']//following::div[.='Hunt Group Name']/../../../tr[2]/td[1]/div,txtHGrnName
+txtHGphoneNo,xpath,//h3[.='Hunt Group Remove Details']//following::div[.='Phone Number']/../../../tr[2]/td[2]/div,txtHGphoneNo
+txtCallQueueNameAVI,xpath,//h3[.='Call Queue']/../div[1]/table/tbody/tr[2]/td[1]/div,txtCallQueueNameAVI
+txtCallQueueExt,xpath,//h3[.='Call Queue']/../div[1]/table/tbody/tr[2]/td[3]/div,txtCallQueueExt
+txtCallQueueNotes,xpath,//h3[.='Call Queue Notes']/../div[2]/table/tbody/tr[2]/td/div,txtCallQueueNotes
+txtCallIDLN,xpath,//div[.='Caller ID Last Name']/../../../tr[2]/td[1]/div,txtCallIDLN
+txtCallIDFN,xpath,//div[.='Caller ID Last Name']/../../../tr[2]/td[2]/div,txtCallIDFN
+txtCQTimeZone,xpath,//div[.='Caller ID Last Name']/../../../tr[2]/td[3]/div,txtCQTimeZone
+txtCQGrpouPolicy,xpath,//div[.='Caller ID Last Name']/../../../tr[2]/td[4]/div,txtCQGrpouPolicy
+txtCQQueueLength,xpath,//div[.='Queue Length']/../../../tr[2]/td[1]/div,txtCQQueueLength
+txtCQAllowEscapefromQueue,xpath,//div[.='Allow Escape from Queue']/../../../tr[2]/td[2]/div,txtCQAllowEscapefromQueue
+txtCQEscDigit,xpath,//div[.='Escape Digit']/../../../tr[2]/td[3]/div,txtCQEscDigit
+txtCQAgents,xpath,//h3[.='Assigned Agents']//../../table/tbody/tr[3]/td/div,txtCQAgents
+txtOverflowAction,xpath,//div[.='Overflow Action']//../../../tr[2]/td[1]/div,txtOverflowAction
+txtTransferTo,xpath,//div[.='Transfer to']//../../../tr[2]/td[2]/div,txtTransferTo
+txtOverFlowCallAfter,xpath,//div[.='Overflow calls after']//../../../tr[2]/td[3]/div,txtOverFlowCallAfter
+txtCQTNAVI,xpath,//div[.='Phone Number']/../../../tr[2]/td[2]/div,txtCQTNAVI
+txtSCASeatName,xpath,//h3[.='Shared Call Appearance']//following::div[.='Seat Name']/../../../tr[2]/td[1]/div,txtSCASeatName
+txtSCADeviceType,xpath,//h3[.='Shared Call Appearance']//following::div[.='Device Type']/../../../tr[2]/td[2]/div,txtSCADeviceType
+txSideCars,xpath,//h3[.='Shared Call Appearance']//following::div[.='Number of Side Cars']//../../../tr[2]/td[3]/div,txSideCars
+txtLine,xpath,//h3[.='Shared Call Appearance']//following::div[.='Line']/../../../tr[2]/td[1]/div,txtLine
+txtUser,xpath,//h3[.='Shared Call Appearance']//following::div[.='User']//../../../tr[2]/td[2]/div,txtUser
+txtType,xpath,//h3[.='Shared Call Appearance']//following::div[.='Type']//../../../tr[2]/td[3]/div,txtType
+txtSCBLFName,xpath,//h3[.='SCA/BLF']//following::tr[2]/td/div,txtSCBLFName
+txtBLFWho,xpath,//h3[.='SCA/BLF']//following::div[.='Who']/../../../tr[2]/td[1]/div,txtBLFWho
+txtBLFType,xpath,//h3[.='SCA/BLF']//following::div[.='Type']//../../../tr[2]/td[2]/div,txtBLFType
+txtCustDetailsGroupName,xpath,//h3[.='Customer Details']//following::div[.='Enterprise ID']//following::div[1],txtCustDetailsGroupName
+txtAutoTestSDPMName,xpath,//h3[.='Site Details']//following::div[.='SDPM Name']//following::div[3],txtAutoTestSDPMName
+txtgrpIDCustDetals,xpath,//h3[.='Customer Details']//following::div[.='Enterprise ID']//following::div[2],txtgrpIDCustDetals
+txtLeadID,xpath,//h3[.='Site Details']//following::div[.='Lead ID']//following::div[1],txtLeadID
+txtEnterpiseID,xpath,//h3[.='Customer Details']//following::div[.='Enterprise ID']//following::div[3],txtEnterpiseID
+txtESGLicenseQTY,xpath,//h3[.='Site Details']//following::div[.='Call Capacity (ESG License Quantity)']//following::div[2],txtESGLicenseQTY
+txtDirectoryDisplayName,xpath,//h3[.='Seats']//following::div[6],txtDirectoryDisplayName
+btnEXPDirectoryName,xpath,//span[@class='btn-icon btn-list'],btnEXPDirectoryName
+txtCallerIdName,xpath,//div[.='Caller ID Name']//following::div[3],txtCallerIdName
+txtPlaceListingAs,xpath,//div[.='Place Listing As']//following::div[3],txtPlaceListingAs
+txtHeaderText,xpath,//div[.='Header Text']//following::div[3],txtHeaderText
+txtHeaderCode,xpath,//div[.='Header Code']//following::div[3],txtHeaderCode
+txtSICCode,xpath,//div[.='SIC Code']//following::div[3],txtSICCode
+txtDirectoryListingNum,xpath,//div[.='Directory Listing Number']//following::div[2],txtDirectoryListingNum
+txtOmitAddress,xpath,//div[.='Omit Address']//following::div[2],txtOmitAddress
+txtEquipmentAmount,xpath,//div[@class='js-equipment']//following-sibling::tr[@class='summary-row summary-values']/td[2]/div,txtEquipmentAmount
+txtEquipmentType,xpath,//div[@class='js-equipment']//following-sibling::tr[@class='summary-row summary-values']/td[1]/div,txtEquipmentType
+txtAATypeUserSummary,xpath,//h2[.='User Service Order Summary']//following::div[.='Type']//following::div[.='Auto Attendant'],txtAATypeUserSummary
+txtUserAAName,xpath,//div[.='User/Service']//following::td[@class='summary-cell name'],txtUserAAName
+AAType,xpath,//div[.='User/Service']//following::td[@class='summary-cell seat-type'],AAType
+txtTNPurpose,xpath,//h3[.='Telephone Number Inventory Details']//following::tbody[1]/tr[@class='summary-row summary-values alternate']/td[1],txtTNPurpose
+txtTNEXT,xpath,//h3[.='Telephone Number Inventory Details']//following::tbody[1]/tr[@class='summary-row summary-values alternate']/td[5],txtTNEXT
+txtTNInvName,xpath,//h3[.='Telephone Number Inventory Details']//following::tbody[1]/tr[@class='summary-row summary-values alternate']/td[2],txtTNInvName
+txtTNInvTN,xpath,//h3[.='Telephone Number Inventory Details']//following::tbody[1]/tr[@class='summary-row summary-values alternate']/td[3],txtTNInvTN
+txtSeatDetails,xpath,//h3[.='Seat Details']//following::td[@class='summary-small-cell seat-type-cell']/div,txtSeatDetails
+txtSeatDetailsPurpose,xpath,//h3[.='Seat Details']//following::td[@class='summary-small-cell seat-type-cell']/div/../../td[2]/div,txtSeatDetailsName
+txtSeatDetailsName,xpath,//h3[.='Seat Details']//following::td[@class='summary-small-cell seat-name-cell']/div,txtSeatDetailsName
+txtSeatDetailsPHModel,xpath,//h3[.='Seat Details']//following::td[@class='summary-small-cell equipment-cell'],txtSeatDetailsPHModel
+txtILD,xpath,//div[.='ILD']//following::tr[@class='summary-row summary-values']/td[2]/div,txtILD
+txtgrpIDTollFree,xpath,//h2[.='Toll Free Order Summary']//following::div[.='Group ID'][1]//following::div[@class='summary-val'][2],txtgrpIDTollFree
+txtSiteDetailsGroupName,xpath,//h3[.='Site Details']//following::th/div[.='Group Name']//following::tr[1]/td[1]/div[1],txtSiteDetailsGroupName
+txtUnusedAA1,xpath,//div[.='Unused AutoAttendant-1'],txtUnusedAA1
+txtScopeExtnDialing,xpath,//div[.='Scope Extension Dialing']/../../../tr[2]/td[1]/div,txtScopeExtnDialing
+txtScopeNameDialing,xpath,//div[.='Scope Name Dialing']/../../../tr[2]/td[2]/div,txtScopeNameDialing
+txtNameDialingEntries,xpath,//div[.='Name Dialing Entries']/../../../tr[2]/td[3]/div,txtNameDialingEntries

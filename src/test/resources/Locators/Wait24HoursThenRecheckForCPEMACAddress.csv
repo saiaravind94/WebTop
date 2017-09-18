@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[text()='SYSTEM: Wait 24 hours, then recheck for CPE MAC Address(es)']/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray

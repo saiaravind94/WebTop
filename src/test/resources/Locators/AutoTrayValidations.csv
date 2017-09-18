@@ -1,0 +1,2 @@
+locId,locType,locStr,weType
+lnkShowAll,xpath,//a[.='Show All'],lnkShowAll

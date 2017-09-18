@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+btnDashBoard,xpath,//a[.='Dashboard'],btnDashBoard
+txtSearchbox,name,siteSearchQuery,txtSearchbox
+spinner,xpath,//div[@id='save-overlay'][@style='display: block'],spinner

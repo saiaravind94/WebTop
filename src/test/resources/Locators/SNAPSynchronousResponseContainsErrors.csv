@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,//span[text()='Result: ']/../../td/select,lstResult
+btnSetResult,id,filesForm:setResult,btnSetResult
+SNPErrorTray,xpath,//a[.='ADMIN: SNAP Synchronous Response contains Errors'],SNPErrorTray
+tabPerformOrderAction,xpath,//input[@value='Perform Order Action'],tabPerformOrderAction
+lnkByPassErrorTray,xpath,//a[.='Bypass Error Tray'],lnkByPassErrorTray
+trayName,xpath,//a[.='Auto: Submit Create Recording Call to SNAP'],trayName

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BCP_ProductCatalogVerification" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+		
+	<test name="TC02_Product_Catalog_update_for_Polycom_VVX_311_device_TW_Site_with_3yr_term">
+		<classes>
+			<class name="com.comcast.WebTopCases.TC02_Product_Catalog_update_for_Polycom_VVX_311_device_TW_Site_with_3yr_term">
+				<methods>
+					<include name="UniqueMailAndChildBANCreation" />
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="verifyProductCatalog" />					
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="TC05_Product_Catalog_update_for_Polycom_VVX_311_device_Standard_Site_with_5yr_term">
+		<classes>
+			<class name="com.comcast.WebTopCases.TC02_Product_Catalog_update_for_Polycom_VVX_311_device_TW_Site_with_3yr_term">
+				<methods>
+					<include name="UniqueMailAndChildBANCreation" />
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="verifyProductCatalog" />					
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

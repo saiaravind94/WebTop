@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+lnkSignIn,xpath,.//a[text()='Sign In'],lnkSignIn
+netxuserName,id,YiiCNetxusaLoginForm_username,netxuserName
+netxpwd,id,YiiCNetxusaLoginForm_password,netxpwd
+btnSignIn,xpath,.//input[@value='Sign In'],btnSignIn
+btnSignOut,xpath,.//a[text()='Sign Out'],btnSignOut

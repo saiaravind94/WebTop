@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+btnchooseFileProspect,xpath,.//*[@id='prospectForm:myFileId'],btnchooseFileProspect
+btnSOAAttach,xpath,//td[text()='SOA or SDW - Required']/../td/table/tbody/tr/td/input[@value='Attach'],btnSOAAttach
+btnSOAFileAttach,xpath,//input[@id='prospectForm:myFileId']/../input[2],btnSOAFileAttach
+elmtVerifySuccessful,xpath,//ul[@id='errorMessages']/li,elmtVerifySuccessful
+chkSelectbox,xpath,".//td/span[contains(text(),'Attach Documents')]/../../td/input[@type='checkbox']",chkSelectbox
+btnCompleted,xpath,".//td/span[contains(text(),'Attach Documents')]/../../td/input[@value='Completed']",btnCompleted
+btnSaveContinue,id,prospectForm:endSummary,btnSaveContinue

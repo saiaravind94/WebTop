@@ -1,0 +1,18 @@
+locId,locType,locStr,weType
+lnkGroup,xpath,//a[text()='Groups'],link
+lnkSystem,xpath,//a[text()='System'],link
+DrpdnSearchWith,name,findKey0,dropdown
+DrpdnSearchCondition,id,findOp0,dropdown
+TxtSearchFor,id,findValue0,textbox
+btnSearch,id,search0,button
+lnkUsers,xpath,//a[text()='Users'],link
+UserList,id,Row1Col0,user1
+extensionDialingDigit,xpath,.//*[@id='Row1Col4'],extensionDialingDigit
+lnkResources,xpath,//a[text()='Resources'],Resources Link
+lnkServices,xpath,//a[.='Services'][@class='navMenuItem'],Services Link
+lnkClientApplications,xpath,//a[.='Client Applications'],lnkClientApplications
+lnkIdentityDeviceProfile,xpath,//a[.='Identity/Device Profiles'],lnkIdentityDeviceProfile
+lnkProfileSubLink,xpath,//a[.='Profile'][@class='navMenuItem'],lnkProfileSubLink
+txtDeviceName,name,title,txtDeviceName
+txtCNameFName,name,firstName,txtCNameFName
+txtCNameLName,name,lastName,txtCNameLName

@@ -1,0 +1,12 @@
+locId,locType,locStr,weType
+lnkDirectory,xpath,//i[@class='nav-icon-directory'],lnkDirectory
+lnkDirectory_TABTN,xpath,"//div[contains(text(),""TAB"")]",lnkDirectory_TABTN
+txtDirectoryDisplayName,name,dirLstName,txtDirectoryDisplayName
+drpPublishingOptions,xpath,//div[@class='js-publishing-options']/div/div/a/span,drpPublishingOptions
+txtPlaceListingAs,name,placeListingAs,txtPlaceListingAs
+btnMainListingTn,xpath,"//span[text()=""Main Listing TN""]/../span[1]/span/span",btnMainListingTn
+txtheaderText,name,dirLstHdrTxt,txtheaderText
+txtheaderCode,name,dirLstHdrCode,txtheaderCode
+txtheaderSICCode,name,dirLstSicCode,txtheaderSICCode
+btnSaveGeneral,xpath,"//button[text()=""Save""]",btnSaveGeneral
+elmtDirectoryListingSaveSuccessful,xpath,//div[@class='message-text' and text()='Directory listings successfully saved.'],elmtDirectoryListingSaveSuccessful

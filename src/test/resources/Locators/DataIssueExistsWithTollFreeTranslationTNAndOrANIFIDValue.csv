@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabCustomerProfile,xpath,".//a[contains(text(),'Customer Profile')]",tabCustomerProfile
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'Data Issue Exists with Toll Free Translation TN and/or ANI FID Value')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+trayDataIssueExistsWithTollFreeTranslationTNAndOrANIFIDValue,xpath,".//a[contains(text(),'Data Issue Exists with Toll Free Translation TN and/or ANI FID Value')]",trayDataIssueExistsWithTollFreeTranslationTNAndOrANIFIDValue
+lnkInprogressOrder,xpath,.//span[text()='1 Open Inventory Order'],lnkInprogressOrder

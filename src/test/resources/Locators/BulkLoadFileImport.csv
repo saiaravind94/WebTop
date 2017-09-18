@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+btnchooseFile,id,filesForm:myFileId,btnchoose
+btnAttachFile,id,filesForm:addImportFileButton,btnAttach
+btnRefreshList,xpath,"//label[contains(text(),""Attach File:"")]/../input[3]",btnRefreshList
+elmtVerifySuccessful,xpath,//ul[@id='errorMessages']/li,elmtVerifySuccessful

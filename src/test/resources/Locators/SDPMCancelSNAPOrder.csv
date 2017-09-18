@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+lnkSetResultSnap,xpath,//a[.='SDPM: Cancel SNAP Order']//following::select[@name='projectForm:htable:4:j_id_jsp_1566487399_131'],lnkSetResultSnap
+lnkSnapTray,xpath,//a[.='SDPM: Cancel SNAP Order'],lnkSnapTray
+btnSave,name,projectForm:trayHistorySave,btnSave

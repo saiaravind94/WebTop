@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+drpMACDType,xpath,//span[text()='MACD Type']//following::b[1],drpMACDType
+txtMACDType,xpath,"//div[contains(text(),'New MACD (Existing Customer)')]",txtMACDType
+drpOrderDescription,xpath,//span[text()='Order Description']//following::b[1],drpOrderDescription
+txtOrderDescriptionType,xpath,//span[text()='Order Description']//following::div[text()='MACD'],txtOrderDescriptionType
+inpTTSTicketID,xpath,//input[@name='ttsTicketId'],inpTTSTicketID
+btnCreate,xpath,//button[text()='Create'],btnCreate

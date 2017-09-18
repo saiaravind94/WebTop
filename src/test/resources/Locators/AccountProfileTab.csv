@@ -1,0 +1,55 @@
+locId,locType,locStr,weType
+tabOrderProfile,xpath,".//a[contains(text(),'Order Profile')]",tabOrderProfile
+tabAccountProfile,xpath,".//a[contains(text(),'Account Profile')]",tabAccountProfile
+lnkExpandAll,xpath,.//a[text()='Expand All'],lnkExpandAll
+lnkEditESG,xpath,".//span[contains(.,'EdgeMarc 4550-15 WAN Calls') or contains(.,'EdgeMarc 4550-5 WAN Calls') or contains(.,'EdgeMarc 4550-10 WAN Calls') or contains(.,'EdgeMarc 4550-30 WAN Calls')]/../../../../../table/tbody/tr/td/table/tbody/tr/td/a[.='Edit ']",lnkEditESG
+chkboxUpdateFields,xpath,.//span[.='Update Fids']/../input,chkboxUpdateFields
+txtMACAddress,xpath,".//span[contains(.,'MAC Address')]/../../td/input",txtMACAddress
+btnSave,xpath,.//*[@value='Save'],btnSave
+btnSaveAllAndContinue,xpath,.//*[@value='Save All and Continue'],btnSaveAllAndContinue
+lnkGroupID,xpath,".//span[contains(.,'Group ID:')]/../a",lnkGroupID
+lnkInprogressOrder,xpath,.//span[text()='1 Open Inventory Order'],lnkInprogressOrder
+BTNNo,xpath,"//img[contains(@src,'BTN')]/../../td[3]/table/tbody/tr/td/span[2]",BTNNo
+txtTerminatingANI,xpath,".//input[contains(@id,'tollFreeTerminatingAni')]",txtTerminatingANI
+btnUpdate,xpath,.//*[@value='Update'],btnUpdate
+lnkStdANIList,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Standard Seat')]//preceding::img[contains(@src,'ANI')][1]/../../child::td/table/tbody/tr/td/span[2]",lnkStdANIList
+lnkANIList,xpath,"//img[contains(@src,'ANI.bmp')]/../../child::td/table/tbody/tr/td/span[2]",lnkUCANIList
+lnkUCANIList,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Unified Communications Seat')]//preceding::img[contains(@src,'ANI')][1]/../../child::td/table/tbody/tr/td/span[2]",lnkUCANIList
+txtE911StreetNo,xpath,.//*[@id='prospectForm:include:vieweditline:address:strnum'],txtE911StreetNo
+txtE911StreeName,xpath,.//*[@id='prospectForm:include:vieweditline:address:strname'],txtE911StreeName
+txtE911City,xpath,.//*[@id='prospectForm:include:vieweditline:address:city'],txtE911City
+txtE911Zip,xpath,.//*[@id='prospectForm:include:vieweditline:address:zip'],txtE911Zip
+btnCancel,xpath,.//input[@value='Cancel'][1],btnCancel
+btnReturntoInventory,xpath,.//*[@id='prospectForm:returntoinv']|.//*[@value='Save All and Continue'],btnReturntoInventory
+txtE911UnitValue,xpath,.//*[@id='prospectForm:include:vieweditline:address:addrfiddataTable:0:addrfiddatagrid:3:addrFidValueInput'],txtE911UnitValue
+txtE911Unit,xpath,.//*[@id='prospectForm:include:vieweditline:address:addrfiddataTable:0:addrfiddatagrid:4:addrFidValueInput'],txtE911Unit
+btnEditInventory,xpath,//input[@value='Edit Inventory'],btnEditInventory
+expandANIs,xpath,".//span/b[contains(.,'ANIs')]/../../img[contains(@src,'max')]",expandANIs
+lnkANIEdit,xpath,//span[.='ANI']/../following-sibling::td/*/a,lnkANIEdit
+chkboxUpdateAddress,xpath,//span[.='Update Address']/../input,chkboxUpdateAddress
+lnkVOIPList,xpath,"//img[contains(@src,'VIP.bmp')]/../../child::td/table/tbody/tr/td/span[2]",lnkVOIPList
+btnAddInventory,xpath,//input[@value='Add Inventory'],btnAddInventory
+lnkDeleteOrder,xpath,//span[.='Delete'],lnkDeleteOrder
+lnkSubmitThisOrder,xpath,//span[.='Submit This Order'],lnkSubmitThisOrder
+lnkAddStdSeat,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Standard Seat')]//preceding::a[.='Add'][1]",lnkAddStdSeat
+lnkAddUCSeat,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Unified Communications Seat')]//preceding::a[.='Add'][1]",lnkAddUCSeat
+lnkDeviceEdit,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Polycom')][contains(.,'OrderId')]//following::a[1]",lnkDeviceEdit
+lnkEditStdSeat,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Standard Seat')]//preceding::a[.='Add'][1]/../../td/a[.='Edit ']",lnkEditStdSeat
+lnkEditUCSeat,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Unified Communications Seat')]//preceding::a[.='Add'][1]/../../td/a[.='Edit ']",lnkEditUCSeat
+txtTerminatingDate,id,prospectForm:include:vieweditline:lineterminationDateMonth,txtTerminatingDate
+lnkEditUCSeatDevice,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Unified Communications Seat')]//preceding::a[.='Edit '][1]",lnkEditUCSeatDevice
+lnkEditStdSeatDevice,xpath,"//img[contains(@src,'ANI')]//following::span[contains(.,'Standard Seat')]//preceding::a[.='Edit '][1]",lnkEditStdSeatDevice
+txtDECTHandSetIPEI,xpath,//*[.='DECT Handset IPEI']/../td/input,txtDECTHandSetIPEI
+txtDECTBaseName,xpath,//*[.='DECT Base Name']/../td/input,txtDECTBaseName
+lnkEditEAO,xpath,"//img[contains(@src,'TRK')]//following::span[contains(.,'Admin-Only User')]//preceding::a[contains(.,'Edit')][1]",lnkEditEAO
+dropdwnTypeOfUser,xpath,//span[.='Type of User']/../../following-sibling::td/select,dropdwnTypeOfUser
+lblUCBundle1To9,xpath,"//span[contains(.,'Seat Based Unified Communication Seats 1-9 (OrderId: ')]",lblUCBundle1To9
+lblUCBundle10To19,xpath,"//span[contains(.,'Seat Based Unified Communication Seats 10-19 (OrderId: ')]",lblUCBundle10To19
+lnkEditBundle10To19,xpath,"//span[contains(.,'Seat Based Unified Communication Seats 10-19 (OrderId: ')][1]/following::a[.='Edit '][1]",lnkEditBundle10To19
+lblLineCount,xpath,"//span[contains(.,'Line (Call Capacity) (OrderId:')]//following::td[1]",lblLineCount
+txtEmailAddressForUser,xpath,//span[.='Email Address for User']/../../following-sibling::td/input,txtEmailAddressForUser
+txtproductCatalog,xpath,"//span[contains(.,'Polycom VVX 311 HD 3 or 5 yr Term (OrderId: ')]",txtproductCatalog
+txtproductCatalogAmount,xpath,"//span[contains(.,'Polycom VVX 311 HD 3 or 5 yr Term (OrderId: ')]//following::tr/td[2]",txtproductCatalogAmount
+txtAAVOIPList,xpath,"//span[contains(.,'Auto Attendant (OrderId: ')]//preceding::img[contains(@src, 'VIP.bmp')]/following::span[1]",txtAAVOIPList
+txtVMBundle,xpath,"//span[contains(.,'Additional Voicemail Box (OrderId: ')]//preceding::img[contains(@src, 'B.bmp')]/following::span[contains(.,'Additional Voicemail Box (OrderId: ')][1]",txtVMBundle
+txtCQBAgentBundle,xpath,"//span[contains(.,'Call Queue Agent Basic')]//preceding::img[contains(@src, 'B.bmp')]/following::span[contains(.,'Call Queue Agent Basic')][1]",txtCQBAgentBundle

@@ -1,0 +1,10 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,"//span[contains(text(),""Result:"")]/following::select",lstResult
+trayName,xpath,".//a[contains(text(),'CARE: Attach Documents to Disconnect Order')]",trayName
+btnSetResult,id,filesForm:setResult,btnSetResult
+btnChooseFile,id,filesForm:myFileId,btnChooseFile
+btnAttach,xpath,//input[@value='Attach'],btnAttach
+btnReturn,xpath,//input[@value='Return'],btnReturn
+lnkSelectAll,xpath,//a[.='Select All'],
+trayLinkList,xpath,"//a/span[contains(.,'Attach Documents to Disconnect Order')]",

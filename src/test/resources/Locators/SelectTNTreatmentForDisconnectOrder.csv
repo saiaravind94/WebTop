@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstSelectTNTreatmentForDisconnect,xpath,//span[.='Select TN Treatment for Disconnect:  ']/../select,lstSelectTNTreatmentForDisconnect
+btnSaveTray,id,filesForm:add,btnSaveTray
+trayName,xpath,".//a[contains(text(),'CARE: Select TN Treatment for Disconnect Order')]",trayName

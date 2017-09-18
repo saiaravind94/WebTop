@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,.//a[text()='CARE: On DOI - Continue to Provisioning of Device Swap']/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select,lstResult
+btnSave,xpath,.//input[@value='Save'],btnSave

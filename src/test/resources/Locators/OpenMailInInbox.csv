@@ -1,0 +1,9 @@
+locId,locType,locStr,weType
+txtloginId,id,nav-inbox,Login text box
+btnGo,xpath,//button[.='GO'],buttonGo
+lnkPMMailInBoxLink,xpath,//a[.='Manage Business VoiceEdge in My Account'],lnkPMMailInBoxLink
+btnCheckForMails,xpath,//a[.='Reload '],btnCheckForMails
+frameMailBody,xpath,//iframe[@id='messageframe'],frameMailBody
+lnkComcastBusinessAccount,xpath,//a[.='Comcast Business My Account'],lnkComcastBusinessAccount
+lnkSUMailInBoxLink,xpath,//a[.='Manage your services in My Account'],lnkSUMailInBoxLink
+lnkActivateNow,xpath,"//a[.='Activate now'][contains(@style,'#0066cc')]",lnkActivateNow

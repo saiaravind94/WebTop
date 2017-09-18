@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+navSharedCallAppearance,xpath,//i[@class='nav-icon-shared-call-apps'],navSharedCallAppearance
+lnkConfigureSCA,xpath,//h2[.='Shared Call Appearances']//following::div[@class='call-pickup model js-tray-item active']/div/p,lnkConfigureSCA
+drpUser,xpath,//th[.='User']//following::b[1],drpUser
+drpType,xpath,//th[.='Type']//following::b[2],drpType
+btnSave,xpath,//h2[.='Shared Call Appearances']//following::button[@class='btn btn-save js-save'],btnSave

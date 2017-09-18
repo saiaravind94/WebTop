@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	<test name="01_BVE_NC_Pre_Provision_all_parts_of_Ordered_AA_bundles">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />					
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="02_BVE_NC_with_e911_Address_validation_Soft_Phone">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningE911ForApplicableTNs" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	<test
+		name="03_BVE_NC_SDW_ADD_PLA_AND_DL_NAME_ANY_WORD_WITH_UCASE_THEN_PLA_TEXT_AS_EX_ABC_Plumbing_Extn_Dialing_with_3_digits">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	 <test
+		name="18_BVE_NC_TW_Site_STD_UC_Seat_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP-ST_TNS_Extn_Dialing_3_Digits">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_TW_SITE_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP_ST_TNS">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="TNPortMigration" />
+					<include name="updateCRCPState" />
+					<include name="directoryListing" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="provisionPortedTNsForOrder" />
+					<include name="enterFOCDateForPortedTNs" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="05_BVE_NC_STD_Site_STD_UC_seats_Extension_VOIP_validate_line_portID_added_BLF_feature_for_All_Ucseat_Users_in_Switch_Contract_term_36months">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_STD_Site_STD_UC_seats_Extension_VOIP_validate_line_portID_added_BLF_feature_for_All_Ucseat_Users_in_Switch_Contract_term_36months">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="enableBLFFeature" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="06_BVE_NC_STD_SITE_WITH_COLOR_EXPANSION_MODULE_CPE_VVX310_VVX410_VVX500_VVX600_VVX1500">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="07_BVE_NC_BVE_STD_Site_HARTFORD_CRCP_TN_OK_state_NPA_State_RC">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_TW_SITE_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP_ST_TNS">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="TNPortMigration" />
+					<include name="updateCRCPState" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="provisionPortedTNsForOrder" />
+					<include name="enterFOCDateForPortedTNs" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="08_BVE_NC_Std_site_UCseat_Loudringer_with_horn_3_strobe_lights_3_strobe_clears_Extension">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_Std_site_UCseat_Loudringer_with_horn_3_strobe_lights_3_strobe_clears_Extension">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="loudRingerSettings" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="verifyGroupServices" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="09_BVE_NC_STD_Site_with_CQA_TF_RCF_HG_AA_SoftClient_on_IndirectSales_ENT_Contract_term_12months_Extn_Dialing_with_4_digits">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_STD_Site_with_CQA_TF_RCF_HG_AA_SoftClient_on_IndirectSales_ENT_Contract_term_12months_Extn_Dialing_with_4_digits">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="tollFreeTNConfiguration" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="dataIssueExistsWithTollFreeTranslationTNAndOrANIFIDValue" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performTollFreeCIC" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="10_BVE_NC_SOA_WITH_SFDC-ENT_AND_GOV_PROG_SELECTED_AS_RHC_ONLY_VALIDATE_PROMO-DISBLE">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="governmentProgramOrder_CustomerAcceptsServiceStart" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="FOC_date_Negetive">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.FOC_date_Negetive">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="TNPortMigration" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="provisionPortedTNsForOrder" />
+					<include name="enterFOCDateForPortedTNsTrayValidations" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="11_BVE_NC_STD_Site_Twin_Cities_Market_NPA_612_location_Minneapolis_MN">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_TW_SITE_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP_ST_TNS">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="TNPortMigration" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="provisionPortedTNsForOrder" />
+					<include name="enterFOCDateForPortedTNs" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="12_SBP_NC_Multi_Site_Add_STD_seat_UCseat_with_1StandardUser_3TechAdmin_2EnterpriseAdmin_Users">
+		<classes>
+			<class name="com.comcast.WebTopCases.MultiSiteFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />					
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+					<include name="updateDumpValuesAfterPrimarySiteCompleted" />
+					<include name="SOA_Or_SDW_Required_MSFlow" />
+					<include name="prequalCheckList_MSFlow" />
+					<include name="reviewOrderForAccuracyAndAcceptance_MSFlow" />
+					<include name="SDPMCompleteDesignReview_MSFlow" />
+					<include name="reviewAndCorrectSFID_MSFlow" />
+					<include name="createAndEnterDSTOrDSGAccountNumber_MSFlow" />
+					<include name="errorValidatingCSGOrDSTFormData_MSFlow" />
+					<include name="reviewAndCorrectSFID_MSFlow" />
+					<include name="scheduleDOIOrDOC_MSFlow" />
+					<include name="SOAOrderComplete_MSFlow" />
+					<include name="webTopLogout_MSFlow" />
+					<include name="SIMONLogin_MSFlow" />
+					<include name="SFOpportunityIDSearch_MSFlow" />
+					<include name="customerDetails_MSFlow" />
+					<include name="orderInformation_MSFlow" />
+					<include name="serviceInformation_MSFlow" />
+					<include name="callerIDInformation_MSFlow" />
+					<include name="TNManagement_MSFlow" />
+					<include name="directoryListing_MSFlow" />
+					<include name="generateWebTopFile_MSFlow" />
+					<include name="AABusinessHours_MSFlow" />
+					<include name="SIMONLogout_MSFlow" />
+					<include name="webTopLoginAfterSIMON_MSFlow" />
+					<include name="bulkLoadFileImportAfterSIMON_MSFlow" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON_MSFlow" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON_MSFlow" />
+					<include name="chooseShippingMethodForCPEOrder_MSFlow" />
+					<include name="errorReservingNativeTNs_MSFlow" />
+					<include name="CPEOrderWillBeSubmittedAutomatically_MSFlow" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP_MSFlow" />
+					<include name="waitingForSNAPFileUploadStatusNotification_MSFlow" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder_MSFlow" />
+					<include name="NetXLogin_MSFlow" />
+					<include name="processTestOrder_MSFlow" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress_MSFlow" />
+					<include name="verifyCPEShipmentOrder_MSFlow" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts_MSFlow" />
+					<include name="e911IncompleteUpdateErrorsOnOrder_MSFlow" />
+					<include name="installTechPreProvisionESG_MSFlow" />
+					<include name="errorProvisioningE911ForApplicableTNs_MSFlow" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise_MSFlow" />
+					<include name="configureAdvancedBroadworksFeatures_MSFlow" />
+					<include name="configureAutoAttendantsAndHuntGroups_MSFlow" />
+					<include name="broadsoftLogin_MSFlow" />
+					<include name="broadsoftGroupAndUsersVerification_MSFlow" />
+					<include name="waitForResponseFromBCPPortal_MSFlow" />
+					<include name="performCPEInstallation_DOI_MSFlow" />
+					<include name="waitForDOCDate_MSFlow" />
+					<include name="cutoverBVE_MSFlow" />
+					<include name="waitForResponseFromNeustar_MSFlow" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar_MSFlow" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually_MSFlow" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus_MSFlow" />
+					<include name="performBillingUpdate_MSFlow" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test
+		name="13_SBP_NC_Multi_Site_with_CQA_TF_RCF_HG_AA_SoftClient_on_IndirectSales_ENT">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_STD_Site_with_CQA_TF_RCF_HG_AA_SoftClient_on_IndirectSales_ENT_Contract_term_12months_Extn_Dialing_with_4_digits">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="tollFreeTNConfiguration" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="dataIssueExistsWithTollFreeTranslationTNAndOrANIFIDValue" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performTollFreeCIC" />
+					<include name="performBillingUpdate" />
+					<include name="updateDumpValuesAfterPrimarySiteCompleted" />
+					<include name="SOA_Or_SDW_Required_MSFlow" />
+					<include name="prequalCheckList_MSFlow" />
+					<include name="reviewOrderForAccuracyAndAcceptance_MSFlow" />
+					<include name="SDPMCompleteDesignReview_MSFlow" />
+					<include name="reviewAndCorrectSFID_MSFlow" />
+					<include name="createAndEnterDSTOrDSGAccountNumber_MSFlow" />
+					<include name="errorValidatingCSGOrDSTFormData_MSFlow" />
+					<include name="reviewAndCorrectSFID_MSFlow" />
+					<include name="scheduleDOIOrDOC_MSFlow" />
+					<include name="SOAOrderComplete_MSFlow" />
+					<include name="webTopLogout_MSFlow" />
+					<include name="SIMONLogin_MSFlow" />
+					<include name="SFOpportunityIDSearch_MSFlow" />
+					<include name="customerDetails_MSFlow" />
+					<include name="orderInformation_MSFlow" />
+					<include name="serviceInformation_MSFlow" />
+					<include name="callerIDInformation_MSFlow" />
+					<include name="TNManagement_MSFlow" />
+					<include name="tollFreeTNConfiguration_MSFlow" />
+					<include name="directoryListing_MSFlow" />
+					<include name="AABusinessHours_MSFlow" />
+					<include name="generateWebTopFile_MSFlow" />
+					<include name="SIMONLogout_MSFlow" />
+					<include name="webTopLoginAfterSIMON_MSFlow" />
+					<include name="bulkLoadFileImportAfterSIMON_MSFlow" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON_MSFlow" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON_MSFlow" />
+					<include name="chooseShippingMethodForCPEOrder_MSFlow" />
+					<include name="errorReservingNativeTNs_MSFlow" />
+					<include name="CPEOrderWillBeSubmittedAutomatically_MSFlow" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP_MSFlow" />
+					<include name="waitingForSNAPFileUploadStatusNotification_MSFlow" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder_MSFlow" />
+					<include name="NetXLogin_MSFlow" />
+					<include name="processTestOrder_MSFlow" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress_MSFlow" />
+					<include name="e911IncompleteUpdateErrorsOnOrder_MSFlow" />
+					<include name="verifyCPEShipmentOrder_MSFlow" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts_MSFlow" />
+					<include name="installTechPreProvisionESG_MSFlow" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise_MSFlow" />
+					<include name="configureAdvancedBroadworksFeatures_MSFlow" />
+					<include name="configureAutoAttendantsAndHuntGroups_MSFlow" />
+					<include
+						name="dataIssueExistsWithTollFreeTranslationTNAndOrANIFIDValue_MSFlow" />
+					<include name="broadsoftLogin_MSFlow" />
+					<include name="broadsoftGroupAndUsersVerification_MSFlow" />
+					<include name="waitForResponseFromBCPPortal_MSFlow" />
+					<include name="performCPEInstallation_DOI_MSFlow" />
+					<include name="waitForDOCDate_MSFlow" />
+					<include name="cutoverBVE_MSFlow" />
+					<include name="waitForResponseFromNeustar_MSFlow" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar_MSFlow" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually_MSFlow" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus_MSFlow" />
+					<include name="performTollFreeCIC_MSFlow" />
+					<include name="performBillingUpdate_MSFlow" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="30_BVE_NC_STD_Site_SOA1.36_fill_Prequal_tab">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.BVE_NC_TW_SITE_ALL_TN_WITH_MULTI_NATIVE_AND_PORTED_FROM_DIFFERENT_CRCP_ST_TNS">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+    
+    <test name="20_BCP_NC_One_DECT_Base_Eight_handSets_3Repeater_Validate_DECTbase_Repeater_Config_under_BTN">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="UniqueMailAndChildBANCreation" />
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="equipmentConfiguration" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	 	
+	 <test name="21_BCP_Validation_Error_in_BCP_Tray_for_Missing_Last_Name_and_Last_Name_with_Single_Char">
+		<classes>
+			<class name="com.comcast.WebTopCases.Error_in_BCP_Tray_for_Missing_Last_Name_and_Last_Name_with_Single_Char">
+				<methods>
+					<include name="UniqueMailAndChildBANCreation" />
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="validationErrorsFoundonSOAOrder" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="equipmentConfiguration" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="updateMainConatctFNameOnly" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="validationErrorsFoundonSOAOrder_SDWFlow" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	<test name="001_New_Seat_based_order_Polycom_VVX_HD_311_411_501_601">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />					
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />					
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="Prod_fix_Call_Queue_Agent_for_UC_seats_is_getting_sent_to_Switch_properly">
+		<classes>
+			<class name="com.comcast.WebTopCases.Prod_fix_Call_Queue_Agent_for_UC_seats_is_getting_sent_to_Switch_properly">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />					
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="enableCallQueueFeature" />
+					<include name="addUsersIntoCallQueue" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />					
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+					<include name="verifyCQBAgentBundleInAccountProfile" />
+					<include name="verifyGroupServicesForCQB" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="TC_001_WT_ESGMacAddressSync_in_Device_Level_FID">
+		<classes>
+			<class name="com.comcast.WebTopCases.CommonE2EFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />					
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />					
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="atLeastOneMissingMACAddressStillExistsOnTheOrder" />				
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />					
+					<include name="waitingForSNAPFileUploadStatusNotification" />					
+					<include name="e911IncompleteUpdateErrorsOnOrder" />				
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallation_DOI" />
+					<include name="waitForDOCDate" />
+					<include name="cutoverBVE" />
+					<include name="waitForResponseFromNeustar" />
+					<include name="errorProvisioningDAOrDLOrCNAMatNeustar" />
+					<include name="provisionDAOrDLOrCNAMatNeustarManually" />
+					<include name="waitAtLeast2MinutesBeforeCheckingCEMPStatus" />
+					<include name="performBillingUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

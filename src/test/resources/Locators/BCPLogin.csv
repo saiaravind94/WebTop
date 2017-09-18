@@ -1,0 +1,16 @@
+locId,locType,locStr,weType
+txtEmail,id,user,txtEmail
+txtPassword,id,passwd,txtPassword
+txtCaptcha,xpath,//input[@id='answer' or @id='nucaptcha-answer'],txtCaptcha
+btnSignIn,id,sign_in,btnSignIn
+lnkPleaseTryAgain,xpath,//a[.='Please try again.'],lnkPleaseTryAgain
+lnkSignOut,xpath,//span[.='Sign Out']|//a[.='Sign Out'],lnkSignOut
+lnkGetStarted,xpath,//a[.='Get started'],lnkGetStarted
+txtVMPin,id,day-one-pin,txtVMPin
+txtConfirmVMPin,id,day-one-confirm,txtConfirmVMPin
+btnSaveContinue,xpath,//button[.='Save & Continue' or .='Save & continue'],btnSaveContinue
+btnContinue,xpath,//button[.='Continue'],btnContinue
+lnkSkip,xpath,//a[.='Skip'],lnkSkip
+btnContinueToDashboard,xpath,//a[.='Continue to Dashboard'],btnContinueToDashboard
+imgMyAccount,xpath,//a[.='My Account']/../../../following-sibling::div[2]/button,imgMyAccount
+lnkThanks,xpath,"//button[contains(.,'thanks')]",lnkThanks

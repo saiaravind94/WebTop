@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'ADMIN: Error Determining Order Type')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+expandFIDInfo,xpath,"//span[contains(@onclick,'prospectOrderFidsInfo')]",expandFIDInfo
+dropDownOrderType,xpath,//span[.='Order Type']/../following-sibling::td/select,dropDownOrderType
+btnSaveFIDValues,id,viewProspectOrderFids:prospectOrderFidsForm:saveOrderFids,btnSaveFIDValues

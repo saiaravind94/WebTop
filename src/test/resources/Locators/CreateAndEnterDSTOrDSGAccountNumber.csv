@@ -1,0 +1,9 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkCreateAndEnterDSTOrCSGAccountNumber,xpath,.//a[text()='Create and Enter DST/CSG Account Number'],lnkCreateAndEnterDSTOrCSGAccountNumber
+txtCSGAccNumber,xpath,"//span[contains(text(),""CSG Account Number"")]/../input",txtCSGAccNumber
+txtDSTAccNumber,xpath,"//span[contains(text(),""DST Account Number"")]/../input",txtDSTAccNumber
+txtHouseKeyNumber,xpath,"//span[contains(text(),""House Key Number"")]/../input",txtHouseKeyNumber
+lstTimeZone,xpath,"//span[contains(text(),""Time Zone"")]/../select",lstTimeZone
+txtCustomerLocatioRateCenter,xpath,"//span[contains(text(),""Customer Location Rate Center"")]/../input",txtCustomerLocatioRateCenter
+btnSave,id,filesForm:add,btnSave

@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+lnkSetResult,xpath,//a[.='Enter Cancellation Reason(s)'],lnkSetResult
+txtareaCancellationReason,xpath,//textarea[@name='filesForm:j_id_jsp_1217920711_46:0:j_id_jsp_1217920711_53'],txtareaCancellationReason
+drpCancelIntent,name,filesForm:j_id_jsp_1217920711_46:1:form1fieldplaceholderselectonemenu,drpCancelIntent
+btnSave,name,filesForm:add,btnSave
+txtHistoryTab,xpath,//span[.='History'],txtHistoryTab

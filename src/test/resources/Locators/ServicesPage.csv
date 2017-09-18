@@ -1,0 +1,49 @@
+locId,locType,locStr,weType
+txtDescription,xpath,".//b[contains(.,'Order Description')]/following-sibling::input",txtDescription
+btnSaveAndContinue,id,prospectForm:saveAndCont,btnSaveAndContinue
+dropDwnBTN,id,prospectForm:include:vieweditline:aniBtnSelectInputa,dropDwnBTN
+txtVoIpID,id,prospectForm:include:vieweditline:lineNumber,txtVoIpID
+dropDwnCustomerLineType,id,prospectForm:include:vieweditline:linecustomerLineType,dropDwnCustomerLineType
+txtEmailAddressForUser,xpath,//span[.='Email Address for User']/../../following-sibling::td/input,txtEmailAddressForUser
+txtCNAMLastName,id,prospectForm:include:vieweditline:aniCnamLastOrBusiness,txtCNAMLastName
+txtCNAMFirstName,id,prospectForm:include:vieweditline:aniCnamFirst,txtCNAMFirstName
+txtCallingName,id,prospectForm:include:vieweditline:aniCallingName,txtCallingName
+txtEffectiveDate,id,prospectForm:include:vieweditline:lpoEffectiveDate,txtEffectiveDate
+btnAddToOrder,xpath,//input[@value='Add to Order'],btnAddToOrder
+chkboxVoIP,xpath,//span[.='VIP']/../child::input,chkboxVoIP
+btnBundle,id,prospectForm:addBundlebutton,btnBundle
+btnItem,id,prospectForm:addItembutton,btnItem
+dropDownItem,id,prospectForm:include:selectedItem,dropDownItem
+dropDownFeatureType,xpath,//span[.='Feature Type']/../../child::td/select,dropDownFeatureType
+dropDownLanguage,xpath,//span[.='Language']/../../child::td/select,dropDownLanguage
+txtRecContactName,xpath,//span[.='Recording Contact Name']/../../child::td/input,txtRecContactName
+txtRecContactEMail,xpath,//span[.='Recording Contact Email']/../../child::td/input,txtRecContactEMail
+txtRecContactPhnoeNo,xpath,//span[.='Recording Contact Phone']/../../child::td/input,txtRecContactPhnoeNo
+dropDownAnnouncementType,xpath,//span[.='Announcement Type']/../../child::td/select,dropDownAnnouncementType
+dropDownVoiceTone,xpath,//span[.='Voice Tone']/../../child::td/select,dropDownVoiceTone
+dropDownAAItemStatus,xpath,//span[.='Auto Attendant Item Status']/../../child::td/select,dropDownAAItemStatus
+dropDownSpokenBusinessLegalType,xpath,"//span[.='Spoken Business Legal Type (""INC., LLC, PA"" etc.)']/../../child::td/select",dropDownSpokenBusinessLegalType
+btnSave,xpath,//*[@value='Save'],btnSave
+chkboxANI,xpath,"//b[contains(.,'ANI')]/following::input[@type='checkbox'][1]",chkboxANI
+txt10DigitTNToConvert,xpath,//span[.='10-digit TN to Convert']/../../child::td/input,txt10DigitTNToConvert
+txtUserMacAddress,xpath,//span[.='User MAC Address']/../../td/input,txtUserMacAddress
+txtTrunkGroupId,id,prospectForm:include:vieweditline:lineNumber,txtTrunkGroupId
+txtFName,xpath,//span[.='First Name']/../../../td/input,txtFName
+txtLName,xpath,//span[.='Last Name']/../../../td/input,txtLName
+dropdwnTypeOfUser,xpath,//span[.='Type of User']/../../following-sibling::td/select,dropdwnTypeOfUser
+chkboxTrk,xpath,//span[.='TRK']/../child::input,chkboxTrk
+txtDECTBaseName,xpath,//span[.='DECT Base Name']/../../td/input,txtDECTBaseName
+txtDECTHandSetIPEI,xpath,//*[.='DECT Handset IPEI']/../td/input,txtDECTHandSetIPEI
+txtANI,xpath,//span[.='ANI']/following::input[1],txtANI
+dropdownPorted,xpath,//span[.='Ported']/following::select[1],dropdownPorted
+dropDownEvent,xpath,"//span[contains(.,'Event')]/../../following-sibling::td/select[1]",dropDownEvent
+txtDLProvider,xpath,//Span[.='DL Provider']/following::input[1],txtDLProvider
+txtSIC,xpath,//Span[.='SIC']/following::input[1],txtSIC
+txtYellowPageHeaderText,xpath,//Span[.='Yellow Page Header Text']/following::input[1],txtYellowPageHeaderText
+dropDownUserILD,xpath,//span[.='User ILD']/../../following-sibling::td/select,dropDownUserILD
+txtYellowPageCode,xpath,//span[.='Yellow Page Code']/following::input[1],txtYellowPageCode
+dropDownRecordType,xpath,//span[.='Record Type']/following::select[1],dropDownRecordType
+txtAmount,xpath,//span[.='Amount:']/following::input[1],txtAmount
+chkboxOrderInventoryANI,xpath,//b[(.='ANI')]/preceding::input[@type='checkbox'],chkboxOrderInventoryANI
+chkboxCustomerLevel,xpath,//*[.='Customer Level']//following::input[1],chkboxCustomerLevel
+txtQuantity,xpath,//*[.='Quantity:']/following::input[2],txtQuantity

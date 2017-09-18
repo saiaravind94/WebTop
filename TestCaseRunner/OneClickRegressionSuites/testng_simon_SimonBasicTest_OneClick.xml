@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIMONValidations" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+
+	<test name="Verify_Teleworker_info_is_displayed_in_Order_Summary_Screen">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.Verify_Teleworker_info_is_displayed_in_Order_Summary_Screen">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyESGLicenseQuantityInOSPageAndPDFFile" />
+					<include name="verifySiteTypeInOSPageAndPDFFile" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="Verify_the_changes_made_are_getting_saved_when_switching_from_one_tab_to_another_tab">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="orderInformationValidations" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US428579_Verify_all_configurations_made_for_auto_attendant_is_displayed_correctly_in_user_service_summary_screen">
+		<classes>
+			<class name="com.comcast.WebTopCases.AVI_User_OS_Validations">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyAAFieldsInUserServiceSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_01_E2E_SEDEV_US581535_SOA_01_AA_bundle_SIMON_Site_Tab_01_AA_Export_to_Webtop">
+		<classes>
+			<class name="com.comcast.WebTopCases.AutoAttendentVerifications">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="verifyVOIPEntensionAAMustBe4" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_03_E2E_SEDEV_US581535_SOA_01_AA_bundle_SIMON_Site_Tab_03_AA_Export_to_Webtop">
+		<classes>
+			<class name="com.comcast.WebTopCases.AutoAttendentVerifications">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="verifyVOIPEntensionAAMustBe2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US517738_US397674_Verify_SOA_file_upload_is_getting_failed_if_the_file_doesnt_have_SF_OPP_ID">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="verifyErroruploadingSOAwithBlankSFOppID" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="Import_new_Polycom_VVX_501_HD_devices_into_SIMON_upon_Classic_SOA_file_upload">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyLatestPolycomDevicesAreDisplayedInALLSeats" />
+					<include name="validateNetxUSAFile" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US581748_SEDEV_US428596_Site_Detail_Extension_Automation_New_Field_Extension_Generation_Seed">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyPresenceOfExtensionGenerationSeed" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US581748_SEDEV_US428596_Site_Detail_Extension_Automation_New_Field_Use_TN_If_Available">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyPresenceOfUseTNIfAvailable" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="Prod_fix_Validation_1_UC_seat_with_1_Voicemail_box_will_generate_only_1_Line_count_in_SIMON">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyLineCountForTheSeatsConfigured" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="Prod_fix_Validation_that_1_UC_seat_will_genenrate_only_1_Line_count_in_SIMON">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyLineCountForTheSeatsConfigured" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="001_EMail_address_already_present_for_a_BVE_service">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="validateEMailAddress" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="TC_004_re_clicking_Validate_eMail_Addresses">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="validateEMailAddressMultipleTimes" />
+					<include name="correctTheEmailIdForOneSeat" />
+					<include name="validateEMailAddressMultipleTimesAfterEMailIdCorrection" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="001_New_Polycom_phone_models_to_the_Choose_Equipment_drop_down_list">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyAllNewDevicesUnderAllSeates" />
+					<include name="validateNetxUSAFileForAllNewDevices" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_003_SIMON_PrimaryManagerValidation_MultiSite_with_two_PMs_BCP_Enabled_Sites">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="updateLBAccountAndChildBAN" />
+					<include name="validateErrorMessageForMultiplePMs" />
+					<include name="secondarySiteCustomerDetails" />
+					<include name="secondarySiteUpdateLBAccountAndChildBAN" />
+					<include name="verifyErrorMsgIfOnePMInPrimarySiteAndNoPMInSecondarySite" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="TC_003_SIMON_EmailValidation_MultiSite_with_InValid_Email_IDUponWTExport_BCP_Enabled_Sites">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="updateLBAccountAndChildBAN" />
+					<include name="validateEMailAddress" />
+					<include name="validatePrimaryManager" />
+					<include name="secondarySiteCustomerDetails" />
+					<include name="secondarySiteUpdateLBAccountAndChildBAN" />
+					<include name="secondarySiteValidateEMailAddress" />
+					<include name="secondarySiteValidatePrimaryManager" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NC_Standard_Site_Base_station_settings_Updation">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="updateBaseStation" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="US478859_Verify_canvas_section_is_displayed_in_full_screen_after_clicking_canvas_icon_at_the_top_of_tools_section">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyCanvasMode" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test
+		name="TC004_DO_NOT_add_Bria_softphone_to_UC_Seat_When_adding_a_new_Extension_Only_UC_Seat">
+		<classes>
+			<class name="com.comcast.WebTopCases.AutoAttendentVerifications">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="verifyVOIPEntensionLineItem" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

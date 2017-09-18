@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkEnterFOCDateForPortedTNs,xpath,.//a[text()='PROV: Enter FOC Date for Ported TNs'],lnkEnterFOCDateForPortedTNs
+dropdownScheduleOrCancel,xpath,//span[.='Schedule or Cancel:  ']/../../td/select,dropdownScheduleOrCancel
+txtFOC,xpath,"//span[contains(text(),""FOC Date"")]/../input",txtFOC
+btnSave,id,filesForm:add,btnSave
+txtErrorFOC,xpath,//a[text()='ADMIN: Error Validating FOC Date Entered'],txtErrorFOC

@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkVerifyCPEShipmentOrder,xpath,.//a[text()='Verify CPE Order Shipment'],lnkVerifyCPEShipmentOrder
+lstResult,xpath,.//span[text()='Result:  ']/../select,lstResult
+btnSave,id,filesForm:add,btnSave

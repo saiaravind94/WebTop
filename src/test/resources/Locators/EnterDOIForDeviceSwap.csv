@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkEnterDOIForDeviceSwap,xpath,.//a[text()='CARE: Enter DOI for Device Swap'],lnkEnterDOIForDeviceSwap
+txtDOI,xpath,"//span[contains(text(),""Enter DOI (Date of Install) for New Device(s)"")]/../input",txtDOI
+btnSave,id,filesForm:add,btnSave

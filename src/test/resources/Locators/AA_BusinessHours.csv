@@ -1,0 +1,16 @@
+locId,locType,locStr,weType
+AATab,xpath,//i[@class='nav-icon-auto-attendants'],AATab
+lnkAA,xpath,"//div[contains(@title,""Unused AutoAttendant-1"")]",lnkAA
+txtBusinessHours,name,businessHrs,txtBusinessHours
+btnSavelink,xpath,//a[.='Close']//following::button[.='Save'][1],btnSavelink
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful
+dropDownGreetingsHash,xpath,//*[.='#']//following::a[@class='select2-choice select2-default'][1],dropDownGreetingsHash
+lnkAAKeysScript,xpath,//a[.='Generate script from Auto Attendant Keys'],lnkAAKeysScript
+dropDownGreetingsStar,xpath,//*[.='*']//following::label[1],dropDownGreetingsStar
+tgleActiveAA,xpath,"//span[.='Active Auto Attendant']//ancestor::div[@class='span4 pretty-checkboxes vertical active-toggle-container js-macd-hide']/label/span/span[not(contains(@class, 'checked'))]",tgleActiveAAchk
+btnAvSeatsAndGroups,xpath,//span[.='Name/Group/Phone #']//following::span[@class='sat-open-button js-sat-open'][1],btnAvSeatsAndGroups
+btnCancel,xpath,//span[.='Cancel'],btnCancel
+columnTypeHeader,xpath,//div[@class='th entity-type js-sat-sort'],columnTypeHeader
+columnTypeHeaderAsc,xpath,//div[@class='th entity-type js-sat-sort active asc'],columnTypeHeaderAsc
+columnTypeHeaderDsec,xpath,//div[@class='th entity-type js-sat-sort active desc'],columnTypeHeaderDsec
+txtEntityTypes,xpath,//div[@class='td entity-type'],txtEntityTypes

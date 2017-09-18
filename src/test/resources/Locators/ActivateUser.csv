@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+txtAccountNumber,xpath,.//input[@id='AccountNumber'],txtAccountNumber
+txtZipCode,xpath,.//input[@id='ZipCode'],txtZipCode
+chkBoxCaptcha,xpath,.//*[@id='recaptcha-anchor'],chkBoxCaptcha
+btnSearchProfiles,xpath,//button[.='Search Profiles'],btnSearchProfiles

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGPOC" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.commons.TestFilterWebTop" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener" />
+	</listeners>
+	<test name="02_SBP_MACD_Teleworker_Site_Partial_Disconnect_UC_seat">		
+		<classes>
+			<class name="com.comcast.WebTopCases.TestNGMain">
+				<methods>
+					<include name="Method1" />
+					<include name="Method2" />
+					<include name="Method3" />
+					<include name="Method4" />
+					<include name="Method5" />
+					<include name="Method6" />
+					<include name="Method7" />
+					<include name="Method8" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

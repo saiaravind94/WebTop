@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstScheduleOrSkipDispactedDate,xpath,"//span[contains(.,'Schedule or Skip Dispatch Date')]/../select",lstScheduleOrSkipDispactedDate
+btnSaveTray,id,filesForm:add,btnSaveTray
+trayName,xpath,".//a[contains(text(),'CARE: Schedule Dispatch')]",trayName
+txtDispatchDueDate,xpath,"//span[contains(.,'Dispatch Due Date')]/../input",txtDispatchDueDate

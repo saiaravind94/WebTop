@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CancelOrderValidations" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	<test name="SNAP_Notification_Auto_Tray">
+		<classes>
+			<class name="com.comcast.WebTopCases.CancelFlow">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="AABusinessHours" />
+					<include name="generateWebTopFile" />
+					<include name="SIMONLogout" />
+					<include name="webTopLoginAfterSIMON" />
+					<include name="bulkLoadFileImportAfterSIMON" />
+					<include name="SOA_Or_SDW_RequiredAfterSIMON" />
+					<include name="reviewOrderForAccuracyAndAcceptanceAfterSIMON" />
+					<include name="chooseShippingMethodForCPEOrder" />
+					<include name="errorReservingNativeTNs" />
+					<include name="CPEOrderWillBeSubmittedAutomatically" />
+					<include name="waitingForOrderAcceptRejectResponseFromSNAP" />
+					<include name="waitingForSNAPFileUploadStatusNotification" />
+					<include name="webTopLogoutAfterShippingMethodForCPEOrder" />
+					<include name="NetXLogin" />
+					<include name="processTestOrder" />
+					<include name="wait24HoursThenRecheckForCPEMACAddress" />
+					<include name="e911IncompleteUpdateErrorsOnOrder" />
+					<include name="verifyCPEShipmentOrder" />
+					<include name="cPEInfoNotReturnedAfterTwoAttempts" />
+					<include name="installTechPreProvisionESG" />
+					<include name="errorProvisioningBroadworksUsersOrEnterprise" />
+					<include name="configureAdvancedBroadworksFeatures" />
+					<include name="configureAutoAttendantsAndHuntGroups" />
+					<include name="broadsoftLogin" />
+					<include name="broadsoftGroupAndUsersVerification" />
+					<include name="waitForResponseFromBCPPortal" />
+					<include name="performCPEInstallationDOICancelOrder" />
+					<include name="enterCancellationReasonsforCancelOrder" />
+					<include name="cancelSNAPOrder" />
+					<include name="requestEquipmentReturn" />
+					<include name="removeNecessaryRecordsFromBroadworks" />
+					<include name="removeEnterpriseFromBroadsworks" />
+					<include name="removeTNFromIntradoManually" />
+					<include name="validateSNAPAutoTray" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

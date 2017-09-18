@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,.//a[text()='INSTALL TECH: Perform CPE Installation (DOI)']/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select,lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray

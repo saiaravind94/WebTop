@@ -1,0 +1,1 @@
+taskkill /f "IEDriverServer.exe"

@@ -1,0 +1,16 @@
+locId,locType,locStr,weType
+btnUpload,xpath,".//div[contains(@class,'js-upload-icon')]",btnUpload
+btnchooseFile,xpath,"//span[contains(text(),""Choose File"")]",btnchoose
+elmnuploadstatus,xpath,"//div[contains(text(),'Upload')]",elmnuploadstatus
+elmttick,xpath,".//*[contains(@class,'js-upload-icon active success')]",elmttick
+txtSearchbox,name,siteSearchQuery,txtSearchbox
+btnSearch,xpath,".//*[contains(@class,'search-button')]",btnSearch
+navtnmgmt,xpath,//i[@class='nav-icon-tn-management'],navtnmgmt
+txtsiteExistError,xpath,"//div[contains(text(),'Site already exists')]",txtsiteExistError
+elemSpinner,xpath,//div[@style='display: block;'][@class='js-loader'],elemSpinner
+txtUploadFailError,xpath,//h1[@class='export-errors-header-text'],txtUploadFailError
+txtContactNameError,xpath,"//h4[.='Site']//following::div[@class='export-error'and contains(.,'Customer Contact Name for a site cannot be blank')]",txtContactNameError
+txtContactPhoneError,xpath,"//h4[.='Site']//following::div[@class='export-error'and contains(.,'Customer Contact Phone for a site cannot be blank')]",txtContactPhoneError
+txtContactEmailError,xpath,"//h4[.='Site']//following::div[@class='export-error'and contains(.,'Customer Contact Email for a site cannot be blank')]",txtContactEmailError
+txtOppIDBlankError,xpath,//div[.='SF Opportunity Id cannot be empty.'],txtOppIDBlankError
+txtMultiplePMErrorMsg,xpath,"//h4[.='Site']//following::div[@class='export-error'and contains(.,'Site should not have more than 1 primary manager.')]",txtMultiplePMErrorMsg

@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkScheduleDOIOrDOC,xpath,.//a[text()='Schedule DOI / DOC'],lnkScheduleDOIOrDOC
+txtDOI,xpath,"//span[contains(text(),""DOI - Date of Install"")]/../input",txtDOI
+txtDOC,xpath,"//span[contains(text(),""DOC - Date of Cut"")]/../input",txtDOC
+btnSave,id,filesForm:add,btnSave
+dropDownScheduledOrCancelled,xpath,"//span[contains(.,'Scheduled or Canceled')]/../child::select",dropDownScheduledOrCancelled

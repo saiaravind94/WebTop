@@ -1,0 +1,9 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkReviewOrderforAccuracyandAcceptance,xpath,.//a[text()='Review Order for Accuracy and Acceptance'],lnkReviewOrderforAccuracyandAcceptance
+listAcceptReject,xpath,"//span[contains(text(),""Accept or Reject Order:  "")]/../select",listAcceptReject
+txtParentAccID,xpath,"//span[contains(text(),""SingleView PARENT Account ID"")]/../input",txtParentAccID
+txtChildAccID,xpath,"//span[contains(text(),""SingleView CHILD Account ID"")]/../input",txtChildAccID
+btnSave,id,filesForm:add,btnSave
+lstResult,xpath,.//tr/td/a[text()='Review Order for Accuracy and Acceptance']/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select,lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray

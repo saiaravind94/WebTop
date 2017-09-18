@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+txtSIMONUsername,name,simon_login_username,txtSIMONUsername
+txtSIMONPwd,name,simon_login_password,txtSIMONPwd
+btnSIMONLogin,xpath,//form[@class='js-login-form']/button,btnSIMONLogin
+btnSIMONLogout,xpath,"//a[text()=""Log Out""]",btnSIMONLogout
+btnSIMONConfirm,xpath,"//a[text()=""Confirm""]",btnSIMONConfirm

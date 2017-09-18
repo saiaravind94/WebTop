@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'Error checking if today is within 5 business days of DOI')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+trayName,xpath,".//a[contains(text(),'Error checking if today is within 5 business days of DOI')]",trayName

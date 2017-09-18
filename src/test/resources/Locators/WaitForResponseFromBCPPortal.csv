@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tab
+lnkWaitForResponseFromBCPPortal ,xpath,.//a[text()='SYSTEM: Wait for Response from BCP Portal (DO NOT SET RESULT)'],link
+lstResult,xpath,.//a[text()='SYSTEM: Wait for Response from BCP Portal (DO NOT SET RESULT)']/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select,dropdown
+btnSaveTray,id,projectForm:trayHistorySave,button

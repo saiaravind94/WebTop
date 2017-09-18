@@ -1,0 +1,6 @@
+locId,locType,locStr,weType
+elemWorkOrderComments,xpath,".//*[contains(@onclick,'workOrderCommentsInfo')]",elemWorkOrderComments
+row_Auto_Provisioning_DA_DL_CNAM_At_Neustar,xpath,.//td[.='Auto: Provision DA/DL/CNAM at Neustar']/../td[2],rowAuto_ProvisioningDA/DL/CNAMAtNeustar
+row_ValidateETSCUpdate,xpath,.//td[.='Auto: Validate ETSC Update (SFDC) Order']/../td[2],row_ValidateETSCUpdate
+row_DeviceSwapOrderErrorMessage,xpath,"//td[contains(.,'Validate Device Swap Order')][contains(@id,'workOrderComments')]/following-sibling::td[1]",row_DeviceSwapOrderErrorMessage
+row_ValidateFOCDateEntered,xpath,//td[text()='Auto: Validate FOC Date Entered']/following-sibling::td[1],row_ValidateFOCDateEntered

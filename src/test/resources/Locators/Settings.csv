@@ -1,0 +1,15 @@
+locId,locType,locStr,weType
+lnkSettings,xpath,//div[@class='right-customer-tool-bar']/div[7],lnkSettings
+lnkGenerateWebTopFile,xpath,"//a[text()=""Generate Webtop file""]",lnkGenerateWebTopFile
+btnDownloadWebtop,xpath,"//a[text()=""Download WebTop File""]",btnDownloadWebtop
+lnkCreateMACDforThisSite,xpath,//a[text()='Create MACD For This Site'],lnkCreateMACDforThisSite
+lnkDeleteSite,xpath,//a[.='Delete Site'],lnkDeleteSite
+btnDelete,xpath,//a[.='Delete'],btnDelete
+elemDeleteSucessful,xpath,//div[text()='Item was deleted sucessfully.'],elemDeleteSucessful
+lnkGenerateNeteXFile,xpath,//a[text()='Generate NetxUSA file'],lnkGenerateNeteXFile
+btndownloadNetexFile,xpath,//a[.='Download Netx File'],btndownloadNetexFile
+lnkValidateEMailAddresses,xpath,//a[text()='Validate Email Addresses'],lnkValidateEMailAddresses
+txtEMailValidationMsg,xpath,//div[@class='message-text'],txtEMailValidationMsg
+lnkValidatePrimaryManager,xpath,//a[text()='Validate Primary Manager'],lnkValidatePrimaryManager
+txtValidatePrimaryManager,xpath,//div[@class='message-text'],txtValidatePrimaryManager
+btnBannerMsgClose,xpath,//a[.='X'],btnBannerMsgClose

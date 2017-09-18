@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkChooseShippingMethodForCPEOrder,xpath,.//a[text()='Choose Shipping Method for CPE Order'],lnkChooseShippingMethodForCPEOrder
+lstShippingMethod,xpath,.//td/*[text()='Shipping Method:  ']/../select,lstShippingMethod
+btnSave,id,filesForm:add,btnSave

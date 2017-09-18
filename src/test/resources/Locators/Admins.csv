@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+lnkAdmins,xpath,.//a[@data-number='5'],lnkAdmins
+drpDownPrimaryManagersList,xpath,//div[@data-id='primaryManager'],drpDownPrimaryManagersList
+btnSave,xpath,"//a[text()=""Next""]/../button[text()=""Save""]",btnSave
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful

@@ -1,0 +1,3 @@
+locId,locType,locStr,weType
+txtloginId,id,nav-inbox,Login text box
+btnGo,xpath,//button[.='GO'],buttonGo

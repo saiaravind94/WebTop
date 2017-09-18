@@ -1,0 +1,9 @@
+locId,locType,locStr,weType
+menuAdmin,xpath,//div[@class='menuBar']/a[4],menuItem
+menuUtilities,xpath,//div[@id='adminMenu']/a[3]/span[1],menuItem
+menuFileImport,xpath,//div[@id='utilitieseSubMenu']/a[1],menuItem
+lstSearch,id,mainMenu:quickSearchForm:searchCat,lstSearch
+txtFor,id,mainMenu:quickSearchForm:searchValue,txtFor
+btnGo,id,mainMenu:quickSearchForm:quickSearch,btnGo
+lnkInprogressOrder,xpath,.//span[text()='1 Open Inventory Order' or text()='1 Open Change Order'],lnkInprogressOrder
+lnkOrderId,xpath,//a[@id='prospectForm:createNewOrder']/../table/tbody/tr/td[1]/a,lnkOrderID

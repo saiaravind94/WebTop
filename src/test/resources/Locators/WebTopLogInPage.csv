@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+txtWebTopUsername,id,loginForm:userName,textBox
+txtWebTopPwd,id,loginForm:password,textBox
+btnWebTopLogin,id,loginForm:submit,button
+btnWebtopLogout,xpath,"//a[text()=""Log Out""]",btnWebtopLogout
+txtBVEText,id,clientForm:id,txtBVEText
+btnGo,id,clientForm:submit,btnGo

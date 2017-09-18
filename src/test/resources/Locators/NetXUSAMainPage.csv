@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+menuOrder,xpath,.//a[text()='Orders'],menuOrder
+menuSalesOrders,xpath,.//a[text()='Sales Orders'],menuSalesOrders
+txtSearch,name,searchTxt,txtSearch
+btnSearch,id,searchButton,btnSearch
+lnkProcessTestOrder,xpath,.//a[text()='Process Test Order'],lnkProcessTestOrder
+btnProcessTestOrder,xpath,.//*[@value='Process Test Order'],btnProcessTestOrder
+msgProcessTestOrder,xpath,.//span[text()='Test order processing completed.'],msgProcessTestOrder

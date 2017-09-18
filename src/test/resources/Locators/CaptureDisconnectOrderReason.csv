@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstDisconnectReason,xpath,"//span[contains(.,'Disconnect Reason')]/../select",lstDisconnectReason
+btnSaveTray,id,filesForm:add,btnSaveTray
+trayName,xpath,".//a[contains(text(),'CARE: Capture Disconnect Order Reason')]",trayName

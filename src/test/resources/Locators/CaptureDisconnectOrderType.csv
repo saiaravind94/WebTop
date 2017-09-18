@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstDisconnectOrderType,xpath,"//span[contains(.,'Disconnect Order Type')]/../select",lstResult
+btnSaveTray,id,filesForm:add,btnSaveTray
+trayName,xpath,".//a[contains(text(),'CARE: Capture Disconnect Order Type')]",trayName

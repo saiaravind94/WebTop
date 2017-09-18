@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabCustomerDetails,xpath,.//a[@data-number='1'],tabCustomerDetails
+btnSiteShipping,xpath,.//div[@class='site-shipping'],btnSiteShipping
+btnshippingaddresstoggle,xpath,"//span[contains(text(),""Same as Service Location"")]/../span[1]/span",btnshippingaddresstoggle
+btnSave,xpath,"//a[text()=""Next""]/../button[text()=""Save""]",btnSave
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful
+bcpEnable,xpath,//span[.='BCP Enabled']//preceding::span[2],bcpEnable
+txtSiteName,name,siteName,txtSiteName

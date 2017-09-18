@@ -1,0 +1,7 @@
+locId,locType,locStr,weType
+tabCustomerProfile,xpath,".//a[contains(text(),'Customer Profile')]",tabCustomerProfile
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,".//a[contains(text(),'ADMIN: Error Validating CSG/DST Form Data')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+errorValidatingCSGOrDSTFormDataTray,xpath,".//a[contains(text(),'ADMIN: Error Validating CSG/DST Form Data')]",errorValidatingCSGOrDSTFormDataTray
+lnkInprogressOrder,xpath,.//span[text()='1 Open Inventory Order'],lnkInprogressOrder

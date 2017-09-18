@@ -1,0 +1,35 @@
+locId,locType,locStr,weType
+lnkServicesInformation,xpath,.//a[@data-number='4'],lnkServicesInformation
+drpESGLicenseQty,xpath,"//span[text()='ESG License Quantity']//following::div[contains(@class,'js-esg-license js-drop-down')]",drpESGLicenseQty
+drpInternationalLongDistance,xpath,"//div[@data-field=""internLongDistance""]/div/div",drpInternationalLongDistance
+drpGrpbtn,xpath,//div[@class='js-group-btn-dropdown']/div/div,drpGrpbtn
+btnEnterpriseDialling,xpath,//div[@class='js-non-kss-toggles']/div[2]/div/label/span/span/span,btnEnterpriseDialling
+txtGenerationSpeed,name,iExtGenSeed,txtGenerationSpeed
+btnGenerateExtn,xpath,"//button[text()=""Generate Extensions""]",btnGenerateExtn
+btnUseTNavailable,xpath,"//span[text()=""Use TN if Available""]/../span[1]/span",btnUseTNavailable
+elmtGenerateextnssuccessful,xpath,//div[@class='message-text' and text()='Extensions Generated Successfully'],elmtGenerateextnssuccessful
+txtContactName,name,snapContName,txtContactName
+txtContactPhone,name,snapContPhone,txtContactPhone
+txtContactEmail,name,snapContEmail,txtContactEmail
+btnNext,xpath,"//a[text()=""Next""]",btnNext
+btnSave,xpath,"//a[text()=""Next""]/../button[text()=""Save""]",btnSave
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful
+drpExtnDialingDigits,xpath,//div[@class='js-drop-down js-acl']/div/div,drpExtnDialingDigits
+txtNoOfStdSeats,xpath,//span[.='Total Standard Seats']/../input[1],txtNoOfStdSeats
+txtNoOfUCSeats,xpath,//span[.='Total UC Seats']/../input[1],txtNoOfUCSeats
+totalNewLines,xpath,//input[@name='totalNewLines'],txtTotalNewLines
+drpESGModel,xpath,"//div[contains(@class,'js-esg-model')]",drpESGModel
+btnSettings,xpath,"//div[contains(@class,'toolbar-btn js-toolbar-btn js-admin-features')]",btnSettings
+lnkOverideSBLines,xpath,//a[text()='Override Seats-Based Lines'],lnkOverideSBLines
+btnAddVMbox,xpath,//button[@class='add-vmbox-btn btn js-add-vmbox'],btnAddVMbox
+txtVoicemailName,xpath,//div[.='Name']//following::div[@class='vmbox-column name'],txtVoicemailName
+btnDelVMBox,xpath,//button[@class='btn-icon btn-delete js-vmbox-destroy destroy'],btnDelVMBox
+btnDelVMRule,xpath,//h3[.='Delete Voicemail Box Rule']//following::a[.='Delete'],btnDelVMRule
+inpPrimaryContactName,xpath,//input[@name='snapContName'],inpPrimaryContactName
+inpPrimBusinessPhone,xpath,//input[@name='snapContPhone'],inpPrimBusinessPhone
+inpPrimEmail,xpath,//input[@name='snapContEmail'],inpPrimEmail
+VMExpand,xpath,//div[@class='vmbox-row expandable js-vmbox-expandable'],VMExpand
+txtFName,name,fname,txtFName
+txtLName,name,lName,txtLName
+txtExtension,name,extension,txtExtension
+btnSaveVM,xpath,//a[.='Cancel']//following-sibling::button[.='Save'],btnSaveVM

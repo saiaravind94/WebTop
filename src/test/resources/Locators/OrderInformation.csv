@@ -1,0 +1,15 @@
+locId,locType,locStr,weType
+lnkOrderInformation,xpath,.//a[@data-number='3'],lnkOrderInformation
+txtsdpmname,name,sdpmName,txtsdpmname
+txtsdename,name,sdeName,txtsdename
+txtSingleViewParentAccID,name,svParentAcctId,txtSingleViewParentAccID
+txtSOAOrderID,name,soaOrderId,txtSOAOrderID
+txtGroupID,name,webtopGrpId,txtGroupID
+btnSave,xpath,"//a[text()=""Next""]/../button[text()=""Save""]",btnSave
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful
+txtLocalBillerAccountID,name,localBillerAccount,txtLocalBillerAccountID
+txtSingleViewChildAccID,name,svChildAcctId,txtSingleViewChildAccID
+txtPricingBase,xpath,//span[.='Pricing Base']/../input[1],txtPricingBase
+txtSiteType,xpath,//span[.='Site Type']/../input[1],txtSiteType
+lnkServicesInformation,xpath,.//a[@data-number='4'],lnkServicesInformation
+txtLeadID,name,workbenchleadID,txtLeadID

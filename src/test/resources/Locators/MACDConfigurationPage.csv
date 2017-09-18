@@ -1,0 +1,76 @@
+locId,locType,locStr,weType
+txtMACDType,xpath,//span[text()='MACD Type']//following::div[@class='js-dropdown-selected-result-value '][3],txtMACDType
+txtOrderDescription,xpath,//span[text()='Order Description']//following::div[@class='js-dropdown-selected-result-value '][3],txtOrderDescription
+inpTTSTicketID,xpath,//span[text()='TTS Ticket #']//following::input[@name='ttsTicketId'][2],inpTTSTicketID
+btnSave,xpath,//button[text()='Save'],btnSave
+btnServiceDetails,xpath,//a[@data-name='Service Details']/span,btnServiceDetails
+lnkClickAddButton,xpath,//h3[text()='Click Here to Add an Item'],lnkClickAddButton
+drpChangeType,xpath,//span[text()='Change Type']//following::b[1],drpChangeType
+drpEntityType,xpath,//span[text()='Entity Type']//following::b[1],drpEntityType
+btnAddItem,xpath,//button[text()='Add Item'],btnAddItem
+btnSeatType,xpath,//h2[text()='Seat Details']//following::b[1],btnSeatType
+btnSeatPurpose,xpath,//span[text()='Seat Purpose *']//following::b[1],btnSeatPurpose
+inpFirstName,xpath,//span[text()='First Name *']//following::input[1],inpFirstName
+inpLastName,xpath,//span[text()='Last Name *']//following::input[1],inpLastName
+btnServiceDetailsSave,xpath,//button[text()='Save'],btnServiceDetailsSave
+btnOrderSummary,xpath,"//a[contains(@href,'summary')]",btnOrderSummary
+inpEditFirstName,xpath,//span[.='First Name']//following::input[@name='fname'],txtEditFirstName
+inpEditlastName,xpath,//span[.='Last Name']//following::input[@name='lName'],txtEditlastName
+inpEditTN,xpath,//span[.='TN']//following::input[@name='tn'][1],inpEditTN
+drpSeatTypeChangeAction,xpath,//span[.='Seat Type Change Action']//following::b[@role='presentation'][1],drpSeatTypeChangeAction
+drpCurrentSeatType,xpath,//span[.='Current Seat Type']//following::b[@role='presentation'][1],drpCurrentSeatType
+drpNewSeatType,xpath,//span[.='New Seat Type']//following::b[@role='presentation'][1],drpNewSeatType
+btnEditSave,xpath,//button[text()='Save'],btnEditSave
+inRMFirstName,xpath,//h2[.='Remove Seat']//following::input[@name='fname'],inRMFirstName
+inRMlastName,xpath,//h2[.='Remove Seat']//following::input[@name='lName'],inRMlastName
+btnRmSave,xpath,//button[text()='Save'],btnRmSave
+lblMACDMessage,xpath,"//div[contains(normalize-space(text()),'was created sucessfully')]",lblMACDMessage
+inpCallQueueName,xpath,//input[@name='cqName'],inpCallQueueName
+inpCallQueueTN,xpath,//input[@name='currentTn'],inpCallQueueTN
+drpbtnCallQueuePortType,xpath,//span[text()='Port Type']//following::b[1],drpbtnCallQueuePortType
+drpbtnCallQueueTimeZone,xpath,//span[text()='Time Zone *']//following::b[1],drpbtnCallQueueTimeZone
+inpRemoveCallQueueName,xpath,//span[.='Call Queue Name']//following::input[@name='cqName'],inpRemoveCallQueueName
+inpTollFreeTN,xpath,//input[@name='tn'],inpTollFreeTN
+drpAreaOfService,xpath,//span[.='Area of Service']//following::b[1],drpAreaOfService
+drpPortType,xpath,//span[.='Port Type']//following::b[1],drpPortType
+inpTFTNEdit,xpath,//h2[.='Toll Free TN']//following::span[.='TN']//following::input[1],inpTFTNEdit
+inpTFTNEditCurrentFName,xpath,//h2[.='Toll Free TN']//following::input[@name='editTnCurrFName'],inpTFTNEditCurrentFName
+inpTFTNEditCurrentLName,xpath,//h2[.='Toll Free TN']//following::input[@name='editTnCurrLName'],inpTFTNEditCurrentLName
+inpTFTNEditNewFName,xpath,//h2[.='Toll Free TN']//following::input[@name='editTnNewFName'],inpTFTNEditNewFName
+inpTFTNEditNewLName,xpath,//h2[.='Toll Free TN']//following::input[@name='editTnNewLName'],inpTFTNEditNewLName
+inpRemoveTFTN,xpath,//h2[.='Remove Toll Free TN']//following::input[@name='tn'],inpRemoveTFTN
+inpRCFTn,name,tn,inpRCFTn
+inpTranslationTN,name,translationTn,inpTranslationTN
+drpRFTNPortType,xpath,//span[.='Port Type']//following::b[1],drpRFTNPortType
+drpRFTNState,xpath,//span[.='State']//following::b[1],drpRFTNState
+inpTNEditRCF,xpath,//h2[.='RCF TN']//following::input[@name='tn'][2],inpTNEditRCF
+inpTranslationTNEditRCF,name,translationTn,inpTranslationTNEditRCF
+inpCFNEditRCF,name,editTnCurrFName,inpCFNEditRCF
+inpCLNEditRCF,name,editTnCurrLName,inpCLNEditRCF
+inpNFNEditRCF,name,editTnNewFName,inpNFNEditRCF
+inpNLNEditRCF,name,editTnNewLName,inpNLNEditRCF
+inpRemoveRFTN,xpath,//input[@name='tn'],inpRemoveRFTN
+inpReceptionistName,xpath,//span[.='Receptionist Name']//following::input[@name='recpName'],inpReceptionistName
+inpRecpUsers,xpath,//h4[.='Users']//following::textarea[@name='macdGroupUsers'],inpRecpUsers
+inpRecpNameRemove,xpath,//span[.='Receptionist Name']//following::input[@name='recpName'],inpRecpNameRemove
+inpRecpTNRemove,xpath,//h2[.='Remove Receptionist']//following::input[@name='tn'],inpRecpTNRemove
+inpAutoAttendentName,xpath,//span[.='Auto Attendant Name']//following::input[@name='aaName'],inpAutoAttendentName
+inpCurrentTNAutoattendent,xpath,//h2[.='Auto Attendant Settings']//following::input[@name='currentTn'],inpCurrentTNAutoattendent
+drpPortTypeAutoAttendent,xpath,//h2[.='Auto Attendant Settings']//following::b[1],drpPortTypeAutoAttendent
+inpTXTtimescheduleDesc,xpath,//textarea[@name='macdTimeScheduleNotes'],inpTXTtimescheduleDesc
+inpHolidayScheduleDesc,xpath,//textarea[@name='macdHolidayScheduleNotes'],inpHolidayScheduleDesc
+drpAutoattTimezone,xpath,//h2[.='Auto Attendant Settings']//following::b[2],drpAutoattTimezone
+inpAutoAttendentRMName,xpath,//h2[.='Remove Auto Attendant']//following::input[@name='aaName'],inpAutoAttendentRMName
+inpRMAutoAtt,xpath,//h2[.='Remove Auto Attendant']//following::input[@name='tn'],inpRMAutoAtt
+inpAddTN,xpath,//h2[.='Add TN']//following::input[@name='tn'],inpAddTN
+drpPortTNType,xpath,//h2[.='Add TN']//following::b[1],drpPortTNType
+inpEditTNMACD,xpath,//h2[.='Inventory TN (DID)']//following::input[@name='tn'][2],inpEditTNMACD
+inpEditTNCFN,xpath,//h2[.='Inventory TN (DID)']//following::input[@name='editTnCurrFName'],inpEditTNCFN
+inpEditTNCLN,xpath,//h2[.='Inventory TN (DID)']//following::input[@name='editTnCurrLName'],inpEditTNCLN
+inpEditTNNFN,xpath,//h2[.='Inventory TN (DID)']//following::input[@name='editTnNewFName'],inpEditTNNFN
+inpEditTNNLN,xpath,//h2[.='Inventory TN (DID)']//following::input[@name='editTnNewLName'],inpEditTNNLN
+inpRemoveTNMACD,xpath,//h2[.='Remove TN']//following::input[@name='tn'],inpRemoveTNMACD
+inpHGName,xpath,//input[@name='hgName'],inpHGName
+inpHGNamermv,xpath,//h2[.='Remove Hunt Group']//following::input[@name='hgName'],inpHGNamermv
+inpHGTnrmv,xpath,//h2[.='Remove Hunt Group']//following::input[@name='tn'],inpHGTnrmv
+expandItem,xpath,//div[@class='expand-icon'],expandItem

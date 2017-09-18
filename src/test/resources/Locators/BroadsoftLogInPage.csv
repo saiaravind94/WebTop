@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+txtbroadsoftUsername,name,EnteredUserID,textBox
+txtbroadsoftPwd,name,Password,textBox
+btnbroadsoftLogin,xpath,//a[@href='javascript:submitForm()'],button
+btnbroadsoftLogout,xpath,//a[@href='/servlet/Logout'],button

@@ -1,0 +1,14 @@
+locId,locType,locStr,weType
+tabExtendedInfo,xpath,".//a[contains(text(),'Extended Info')]",tabExtendedInfo
+expandMiscInfo,xpath,".//*[contains(@onclick,'other')]",expandMiscInfo
+txtRateCenter,xpath,.//td[text()='Rate Center']/../td/input,txtRateCenter
+txtTNOrderPool,xpath,.//td[text()='TN Order Pool']/../td/input,txtTNOrderPool
+txtCSGAccountNumber,xpath,.//td[text()='CSG Account Number']/../td/input,txtCSGAccountNumber
+txtDSTAccountNumber,xpath,.//td[text()='DST Account Number']/../td/input,txtDSTAccountNumber
+txtHouseKey,xpath,".//td[contains(text(),'House Key')]/../td/input",txtHouseKey
+btnSaveMiscInfo,xpath,.//*[@id='customerForm:saveMisc'],btnSaveMiscInfo
+txtMarket,xpath,.//td[text()='Market']/../td/input,txtMarket
+lstTimeZone,xpath,.//td[.='Time Zone']/../td/select,lstTimeZone
+txtESGMACAddress,xpath,.//td[text()='ESG MAC Address']/../td/input,txtESGMACAddress
+txtSFAccountID,xpath,.//td[text()='Salesforce Account Number']/../td/input,txtSFAccountID
+tabCustomerProfile,xpath,".//a[contains(text(),'Customer Profile')]",tabCustomerProfile

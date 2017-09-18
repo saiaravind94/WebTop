@@ -1,0 +1,11 @@
+locId,locType,locStr,weType
+drpdwnRegion,name,region,Region Drop Down
+drpdwnLevel,name,level,Level Drop Down
+optnEmail,xpath,//input[@value='Email'],Email Option
+txtInput,id,form_inputs,Input Box
+btnwhitelistEMail,xpath,//input[@value='Whitelist Emails / Phones Now'],WhiteList Email Button
+btnGetAccountLevel,xpath,//input[@value='Get Account Level Now'],Get Account Level Button
+txtResult,xpath,//table[@id='resultTable']/tbody/tr[2]/td[3],Result Text for Email
+txtChildBANResult,xpath,//table[@id='resultTable']/tbody/tr[3]/td[4],Result Text for BAN Result
+txtNTLogin,name,login,txtNTLogin
+txtNTLoginPassword,name,password,txtNTLoginPassword

@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkReviewAndCorrectSFID,xpath,".//a[contains(text(),'Review and Correct SFID')]",lnkReviewAndCorrectSFID
+btnSave,id,filesForm:add,btnSave

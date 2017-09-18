@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+btnManagePhoneSettings,xpath,//a[normalize-space(.)='Manage Phone Settings'],btnManagePhoneSettings
+lnkEditCallerID,xpath,//h3[.='Caller ID Name']/../button[@data-role='edit'],lnkEditCallerID
+CallerIDFName,id,CallerIDFirstName,CallerIDFName
+CallerIDLName,id,CallerIDLastName,CallerIDLName
+btnTick,xpath,//button[@data-role='submit'],btnTick
+lblCallerIDUpdateMessage,xpath,"//span[contains(.,'Caller ID Name Successfully saved!')]",lblCallerIDUpdateMessage
+txtUserName,xpath,"//p[contains(@data-bind, 'text: Response.FirstName')]",txtUserName

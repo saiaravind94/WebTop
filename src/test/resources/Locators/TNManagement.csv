@@ -1,0 +1,22 @@
+locId,locType,locStr,weType
+navtnmgmt,xpath,//i[@class='nav-icon-tn-management'],navtnmgmt
+lnktnmgmt_TABTN,xpath,"//div[contains(text(),""TABTN"")]",lnktnmgmt_TABTN
+btnDirectoryLising,xpath,"//span[text()=""Directory Listing""]/../span[2]/span/span",btnDirectoryLising
+btnSavelink,xpath,"//a[text()=""Save""]",btnSavelink
+elmtTNinventorysuccess,xpath,//div[@class='message-text' and text()='TN inventory successfully saved.'],elmtTNinventorysuccess
+txtTNNumber,name,tn,txtTNNumber
+txtExistingServices,name,existingService,txtExistingServices
+drpdownPortType,xpath,//div[@data-field='portType'],drpdownPortType
+drpdownState,xpath,//div[@data-field='state'],drpdownState
+txtNPA,name,npa,txtNPA
+txtNXX,name,nxx,txtNXX
+txtRatecenter,name,rateCenter,txtRatecenter
+drpdwnAreaOfService,xpath,.//span[.='Area of Service']/../div,Area Of Service drop down
+tollFreeTN,xpath,"//div[contains(text(),""Toll Free"")] [@class='td tn-type']",tollFreeTN
+toggleBtnCRCP,xpath,//span[@class='pretty-checkbox toggleEventTarget'],CRCP Toggle Button
+btnAddTN,xpath,//*[@class='add-tn-btn btn js-add-tn'],btnAddTN
+dropDownTNType,xpath,//*[.='TN Type']//following::span[1],dropDownTNType
+dropDownPortType,xpath,//*[.='Port Type']//following::span[1],dropDownPortType
+btnAdd,xpath,//*[.='Add'],btnAdd
+UnassignedSeat,xpath,//div[@class='td tn-seat'][normalize-space(.)='Unassigned'],UnassignedSeat
+dropDownSeat,xpath,//span[.='Seat']/following::span[1],dropDownSeat

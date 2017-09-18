@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lstResult,xpath,"//span[contains(text(),""Result:"")]/following::select",lstResult
+trayName,xpath,".//a[contains(text(),'CARE: Attach Documents to 10-digit TN Removal Order')]",trayName
+btnSetResult,id,filesForm:setResult,btnSetResult
+btnChooseFile,xpath,//input[@id='filesForm:myFileId' or @id='prospectForm:myFileId'],btnChooseFile
+btnAttach,xpath,//input[@value='Attach'],btnAttach
+btnReturn,xpath,//input[@value='Return'],btnReturn

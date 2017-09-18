@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkSOAOrderComplete,xpath,".//a[contains(text(),'SOA Order Complete')]",lnkSOAOrderComplete
+lstResult,xpath,.//td/select,lstResult
+btnSetResult,id,filesForm:setResult,btnSetResult
+elmtGroupID,id,projectForm:projectHeader:customerNumber,elmtGroupID
+elmtOrdernumber,id,projectForm:projectHeader:orderid,elmtOrdernumber
+elmtCustomerName,id,projectForm:projectHeader:customerName,elmtCustomerName

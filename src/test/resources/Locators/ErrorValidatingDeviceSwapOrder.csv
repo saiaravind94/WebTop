@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+trayName,xpath,".//a[contains(text(),'Error Validating Device Swap Order')]",trayName
+btnDeleteorder,xpath,//input[@value='Delete Order'],btnDeleteorder

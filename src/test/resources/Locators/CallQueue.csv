@@ -1,0 +1,27 @@
+locId,locType,locStr,weType
+navCallQueue,xpath,//a[@class='js-nav-link nav-call-queue gated non-kss non-cordless'],navCallQueue
+btnSettings,xpath,//a[@class='js-nav-step js-nav-step1']/span,btnSettings
+inpCallQueueName,xpath,//span[.='Call Queue Name *']//following::input[@name='cqName'],inpCallQueueName
+inpExt,xpath,//span[.='Ext']//following::input[@name='cqExt'],inpExt
+drpTimeZone,xpath,//span[.='Time Zone *']//following::b[1],drpTimeZone
+radCallQueueRingOrder,xpath,//h2[.='Call Queue Ring Order']//../div/div/div[3]/label/span/span/span,radCallQueueRingOrder
+btnAllowEscFromQueue,xpath,//span[.='Allow Escape from Queue *']/../span/span/span,btnAllowEscFromQueue
+inpEscDestinationPhone,xpath,//span[.='Escape Destination Phone #']//following::input[@name='escapeDestTN'],inpEscDestinationPhone
+drpESCDigit,xpath,//span[.='Escape Digit']//following::b[1],drpESCDigit
+drpQueueLt,xpath,//span[.='Queue Length *']//following::b[1],drpQueueLt
+drpOverFlowPolicy,xpath,//span[.='Overflow Policy']//following::b[1],drpOverFlowPolicy
+inpDestinationTN,xpath,//span[.='Overflow Destination TN']//following::input[@name='overFlowDestTN'],inpDestinationTN
+inpWaitBeforeOverflow,xpath,//span[.='Number of Seconds Caller Waits Before Overflow']//following::input[@name='iSecBeforeOverFlow'],inpWaitBeforeOverflow
+inpComfortScript,xpath,//span[.='Comfort Script - Time Between Messages']//following::input[@name='comfortScripts'],inpComfortScript
+inpCQNotes,xpath,//h4[.='Notes']//following::textarea[@name='notes'],inpCQNotes
+btnSave,xpath,//h3[.='Receptionist Monitoring Group']//following::button[.='Save'],btnSave
+drpPhoneNo,xpath,//span[.='Phone Number']/../div[2]/div/div/a/span[2]/b,drpPhoneNo
+btnUsers,xpath,//a[@class='js-nav-step js-nav-step3'and @data-name='Users'],btnUsers
+btnAddUsers,xpath,//span[@class='gat-add-button'],btnAddUsers
+btnAdd,xpath,//span[.='Add'],btnAdd
+btnScripts,xpath,//a[@class='js-nav-step js-nav-step2'and @data-name='Scripts'],btnScripts
+drpEntScriptPolicy,xpath,//span[.='Entrance Script Policy']/../div/div/div/a/span[2]/b,drpEntScriptPolicy
+drpComfortScriptPolicy,xpath,//span[.='Comfort Script Policy']/../div/div/div/a/span[2]/b,drpComfortScriptPolicy
+drpOnHoldScriptPolicy,xpath,//span[.='On-Hold Script Policy']/../div/div/div/a/span[2]/b,drpOnHoldScriptPolicy
+drpOverFlowScriptPolicy,xpath,//span[.='Overflow Script Policy']/../div/div/div/a/span[2]/b,drpOverFlowScriptPolicy
+btnCallQueueSave,xpath,//h2[.='Call Queue Configuration']//following::button[@type='submit'],btnCallQueueSave

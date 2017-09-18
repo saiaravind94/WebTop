@@ -1,0 +1,3 @@
+locId,locType,locStr,weType
+btnClose,id,openCsv,btnClose
+tblReport,xpath,//table[@class='grid']//tr/td[1],tblReport

@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+lstResult,xpath,".//a[contains(text(),'Ticket Opened with CEMP Team for Manual Provisioning')]/../../td/table/tbody/tr/td/span[text()='Result : ']/../../td/select",lstResult
+btnSaveTray,id,projectForm:trayHistorySave,btnSaveTray
+trayName,xpath,".//a[contains(text(),'Ticket Opened with CEMP Team for Manual Provisioning')]",trayName

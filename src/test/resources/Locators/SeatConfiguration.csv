@@ -1,0 +1,20 @@
+locId,locType,locStr,weType
+navAllSeats,xpath,//i[@class='nav-icon-seats'],navAllSeats
+btnEquipmentFeatures,xpath,//*[@data-name='Equipment / Features'],btnEquipmentFeatures
+btnBLFToggle,xpath,"//span[contains(@class,'isScaOrBlfcheckbox')]/span[@class='pretty-checkbox toggleEventTarget']",btnBLFToggle
+btnAddSeat,xpath,//input[@placeholder='# to add']//following::button[1],btnAddSeat
+lnkConfigureSeat,xpath,//div[(@title='Configure Seat')],lnkConfigureSeat
+dropDownSeatType,xpath,//span[.='Seat Type *']//following::div[1],dropDownSeatType
+dropDownSeatPurpose,xpath,//span[.='Seat Purpose *']//following::div[1],dropDownSeatPurpose
+txtFirstName,xpath,//span[.='First Name *']//following::input[1],txtFirstName
+txtLastName,xpath,//span[.='Last Name *']//following::input[1],txtLastName
+dropDownEquipmentType,xpath,//span[.='Choose Equipment']//following::div[1],dropDownEquipmentType
+btnSave,xpath,//h2[.='Seat Configuration']//following::button[.='Save'],btnSave
+elmtSavesuccessful,xpath,//div[@class='message-text' and text()='Save successful'],elmtSavesuccessful
+txtExtension,xpath,//span[.='Extension']//following::input[1],txtExtension
+txtEmail,xpath,//div[@class='row js-row']//following::input[@name='email'][1],txtEmail
+btnMkSeatReceptionist,xpath,//span[.='Make Seat a Receptionist']//preceding::span[@class='toggle-icon'][1],btnMkSeatReceptionist
+txtEquipmentType,xpath,//span[.='Choose Equipment']//following::a/span/div,txtEquipmentType
+btnmkSeatAvailablefrAgent,xpath,//span[.='Make Seat Available As an Agent']/../span/span/span,btnmkSeatAvailablefrAgent
+drpSeatPurpose,xpath,//span[.='Seat Purpose *']//following::b[1],drpSeatPurpose
+btnSeatDetails,xpath,//a[@data-name='Seat Details']/span,btnSeatDetails

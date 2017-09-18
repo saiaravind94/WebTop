@@ -1,0 +1,9 @@
+locId,locType,locStr,weType
+navHuntGroup,xpath,//i[@class='nav-icon-hunt-groups'],navHuntGroup
+drpPhoneHG,xpath,//span[.='Phone Number']//following::b[1],drpPhoneHG
+inpEXTHG,xpath,//span[.='Ext']/../input,inpEXTHG
+drpHGTimeZone,xpath,//span[.='Time Zone']//following::b[1],drpHGTimeZone
+lnkUsersHG,xpath,//h2[.='Hunt Group Configuration']//following::a[@class='js-nav-step js-nav-step2']/span,lnkUsersHG
+btnAddHGUsers,xpath,//span[@class='gat-add-button js-gat-add-user js-add'],btnAddHGUsers
+btnAddAvailableHGUsers,xpath,//h1[.='Available Hunt Group Users']//following::span[.='Add'],btnAddAvailableHGUsers
+btnSave,xpath,//h2[.='Hunt Group Configuration']//following::button[@class='btn btn-save js-save'],btnSave

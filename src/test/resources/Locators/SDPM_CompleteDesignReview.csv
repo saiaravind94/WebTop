@@ -1,0 +1,8 @@
+locId,locType,locStr,weType
+tabHistory,xpath,.//a[text()='History'],tabHistory
+lnkSDPMCompleteDesignReview,xpath,.//a[text()='SDPM: Complete Design Review'],lnkSDPMCompleteDesignReview
+lstContructionRequired,xpath,"//span[contains(text(),""Construction Required (Y/N)"")]/../select",lstContructionRequired
+txtCompletionETA,xpath,"//span[contains(text(),""Construction Completion ETA"")]/../input",txtCompletionETA
+lstDesignReviewScheduled,xpath,"//span[contains(text(),""Design Review Call Scheduled"")]/../select",lstDesignReviewScheduled
+txtDesignReviewDate,xpath,"//span[contains(text(),""Design Review Call Date/Time"")]/../input",txtDesignReviewDate
+btnSave,id,filesForm:add,btnSave

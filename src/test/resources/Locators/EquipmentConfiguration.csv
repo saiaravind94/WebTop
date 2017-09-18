@@ -1,0 +1,14 @@
+locId,locType,locStr,weType
+navEquipment,xpath,//i[@class='nav-icon-equipment'],navEquipment
+baseStation,xpath,//div[.='DECTbase 1'],baseStation
+btnAddUsers,xpath,//span[@class='gat-add-button'],btnAddUsers
+lstUsers,xpath,//div[@class='gat-item-row'],lstUsers
+btnAdd,xpath,//span[.='Add'],btnAdd
+btnSave,xpath,//button[.='Save'],btnSave
+elmtSuccesfulMsg,xpath,//div[@class='message-text' and text()='Base Station successfully saved'],elmtSuccesfulMsg
+loudRinger,xpath,//div[@class='loud-ringer-col'],loudRinger
+drpdwnColorStrobeLights,xpath,//div[@data-field='strobeLightColor'],ColorStrobeLights Drop down
+drpdwnClearStrobeLights,xpath,//div[@data-field='strobeLightClear'],ClearStrobeLights Drop down
+loudHornTogglebtn,xpath,"//span[contains(@class,'pretty-checkbox toggleEventTarget')]",loudHornTogglebtn
+txtBasestation,xpath,//input[@name='bsName'],txtBasestation
+drpdwnRepeaters,xpath,//div[@data-field='repeater'],drpdwnRepeaters

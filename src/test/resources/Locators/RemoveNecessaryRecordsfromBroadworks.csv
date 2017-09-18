@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+lnkSetResult,xpath,//a[.='Remove Necessary Records from Broadworks'],lnkSetResult
+drpRslt,name,filesForm:j_id_jsp_1217920711_67,drpRslt
+drpSetResult,name,filesForm:setResult,drpSetResult
+txtHistoryTab,xpath,//span[.='History'],txtHistoryTab

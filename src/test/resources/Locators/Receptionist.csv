@@ -1,0 +1,5 @@
+locId,locType,locStr,weType
+navReceptionist,xpath,//i[@class='nav-icon-receptionists'],navReceptionist
+lnkConfigureReceptionist,xpath,//div[@class='receptionist-info'],lnkConfigureReceptionist
+drpSelectSeatName,xpath,//span[.='Seat Name']//following::b,drpSelectSeatName
+btnSave,xpath,//h3[.='Receptionist Monitoring Group']//following::button[.='Save'],btnSave

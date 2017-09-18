@@ -1,0 +1,58 @@
+/target/
+.metadata
+bin/
+tmp/
+null
+*.tmp
+*.bak
+*.swp
+*.import
+*~.nib
+.classpath
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+#.project
+
+# External tool builders
+.externalToolBuilders/
+
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+#TestNG
+.test-output
+.Results
+
+*.class
+*.MF
+
+target/**
+Results/**
+test-output/**
+test-output/S*/**
+logs/**
+
+
+/bin/
+

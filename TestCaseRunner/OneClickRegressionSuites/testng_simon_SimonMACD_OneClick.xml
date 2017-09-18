@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SIMONValidations" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.comcast.utils.TestFilter" />
+		<listener class-name="com.comcast.utils.CustomAnnotationListener"></listener>
+	</listeners>
+	<test
+		name="Verify_fields_are_correctly_populated_in_LNP_OS_PDF_as_in_OS_Screen_for_Standard_site">
+		<classes>
+			<class name="com.comcast.WebTopCases.DetailedOrderSummaryScenarios">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="lNPOrderSummaryVerificationForStandardSite" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DirectoryListingsOrderSummaryVerificationForStandardSite">
+		<classes>
+			<class name="com.comcast.WebTopCases.DetailedOrderSummaryScenarios">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="webTopLogin" />
+					<include name="bulkLoadFileImport" />
+					<include name="SOA_Or_SDW_Required" />
+					<include name="prequalCheckList" />
+					<include name="reviewOrderForAccuracyAndAcceptance" />
+					<include name="SDPMCompleteDesignReview" />
+					<include name="createAndEnterDSTOrDSGAccountNumber" />
+					<include name="errorValidatingCSGOrDSTFormData" />
+					<include name="reviewAndCorrectSFID" />
+					<include name="scheduleDOIOrDOC" />
+					<include name="SOAOrderComplete" />
+					<include name="webTopLogout" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="customerDetails" />
+					<include name="orderInformation" />
+					<include name="serviceInformation" />
+					<include name="callerIDInformation" />
+					<include name="TNManagement" />
+					<include name="directoryListing" />
+					<include name="directoryListingsOrderSummaryVerificationForStandardSite" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="BVE_SIMON_MACD_Add_Edit_Remove_UC_Seat_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_Add_on_existing_customer" />
+					<include name="SIMON_MACD_Edit_on_existing_customer" />
+					<include name="SIMON_MACD_Remove_on_existing_customer" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="BVE_SIMON_MACD_Add_Remove_Call_Queue_feature_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="BVE_SIMON_MACD_Add_CallQueue_on_existing_customer" />
+					<include name="BVE_SIMON_MACD_Remove_CallQueue_on_existing_customer" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BVE_SIMON_MACD_Add_Edit_Remove_TF_TN_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_Add_TF_TN" />
+					<include name="SIMON_MACD_Edit_TF_TN" />
+					<include name="SIMON_MACD_Remove_TF_TN_on_existing_customer" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BVE_SIMON_MACD_Add_Edit_Remove_RCF_TN_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_Add_RCF_TN" />
+					<include name="SIMON_MACD_Edit_RCF_TN" />
+					<include name="SIMON_MACD_Remove_RCF_on_existing_customer" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="BVE_SIMON_MACD_Add_Remove_Receptionist_feature_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_Add_Receptionist" />
+					<include name="SIMON_MACD_RemoveReceptionist" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="BVE_SIMON_MACD_Add_Remove_Auto_Attendant_feature_on_existing_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_Auto_Attendent_Add" />
+					<include name="SIMON_MACD_Auto_Attendent_Remove" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BVE_SIMON_MACD_Add_Edit_Remove_TN_on_existng_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_TN_Add" />
+					<include name="SIMON_MACD_TN_Edit" />
+					<include name="SIMON_MACD_TN_Remove" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BVE_SIMON_MACD_Add_Remove_HG_on_existng_customer">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonMACDValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="SIMON_MACD_HuntGroup_Add" />
+					<include name="SIMON_MACD_HuntGroup_Remove" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="New_Polycom_phone_models_to_appear_on_the_Order_Summary_Report">
+		<classes>
+			<class name="com.comcast.WebTopCases.DetailedOrderSummaryScenarios">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="newPolycomDevicesOSVerification" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US490574_Verify_Callqueue_fields_and_its_values_are_displayed_correctly_in_call_flow_section_once_user_selects_AVI_summary_in_OrderSummaryDropdown">
+		<classes>
+			<class name="com.comcast.WebTopCases.AVI_User_OS_Validations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="callQueueConfiguration" />
+					<include name="callQueueConfigurationAVIOrderSummaryVerification" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="VerifySeatPurposeChangeFromENTAdmintoTechAdmin">
+		<classes>
+			<class name="com.comcast.WebTopCases.SeatPurposeChangeValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySeatPurposeChangeFromENTAdmintoTechAdmin" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="VerifySeatPurposeChangeFromTechAdmintoEntAdmin">
+		<classes>
+			<class name="com.comcast.WebTopCases.SeatPurposeChangeValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySeatPurposeChangeFromTechAdmintoEntAdmin" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verify_BLF_feature_Configuration_in_Order_Summary_Screen">
+		<classes>
+			<class
+				name="com.comcast.WebTopCases.Verify_BLF_feature_Configuration_in_Order_Summary_Screen">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="enableBLFFeature" />
+					<include name="configureSharedCallApp" />
+					<include name="verifySCAFieldsInOrderSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US490574_Verify_SCA_BLF_fields_and_its_values_are_displayed_correctly_in_CFSection_AVI_summaryOSdropdown">
+		<classes>
+			<class name="com.comcast.WebTopCases.AVI_User_OS_Validations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifySCABLFFieldsInAVIOrderSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US428579_Verify_all_configurations_made_for_call_queue_is_displayed_correctly_in_user_service_summary_screen">
+		<classes>
+			<class name="com.comcast.WebTopCases.AVI_User_OS_Validations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyCallQueueFieldsInUserServiceSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test
+		name="Verify_SOA_file_upload_Failing_when_the_file_has_already_been_uploaded_in_SIMON">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="verifyDuplicateSiteError" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="US490574_Verify_fields_values_in_equipment_summary_section_once_user_selects_AVI_summary_in_order_summary_dropdown">
+		<classes>
+			<class name="com.comcast.WebTopCases.AVI_User_OS_Validations">
+				<methods>
+					<include name="SIMONLogin" />
+					<include name="DeleteSiteIfExists" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyEquipmentSummaryinAVIOrderSummary" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="SIMON_Auto_Populate_Information_in_Customer_Contact_for_Recording">
+		<classes>
+			<class name="com.comcast.WebTopCases.SimonValidations">
+				<methods>
+					<include name="SOAUpdator" />
+					<include name="SIMONLogin" />
+					<include name="SIMONUploadDataFile" />
+					<include name="SFOpportunityIDSearch" />
+					<include name="verifyFieldParametersforCustomerContactforRecording" />
+					<include name="updateCustDetailsInSOA" />
+					<include name="deleteSite" />
+					<include name="uploadSite" />
+					<include name="verifyErrorMsgForCustomerContactDetailsWhenGeneratingWebTopImportFile" />
+					<include name="SIMONLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

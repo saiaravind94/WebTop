@@ -1,0 +1,4 @@
+locId,locType,locStr,weType
+navCanvas,xpath,//a[@class='toolbar-btn js-fullscreen-canvas-btn customer-toolbar-fullscreen-canvas'],navCanvas
+canvasPage,xpath,//div[@class='js-fullscreen-canvas-container fullscreen-canvas-container hide'],canvasPage
+lnkBacktosite,xpath,//a[.='Back to site'],lnkBacktosite
